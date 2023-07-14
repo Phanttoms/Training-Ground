@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-base {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+    background-color: #6b6b6b;
+    border-radius: 10% 10% 10% 10%;
+    padding: 10px;
+}
+
+.image {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    width: 100%;
+    max-width: 1600px;
+    margin:auto
+}
