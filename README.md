@@ -1,6 +1,6 @@
 # Training-Ground
 Training Ground
 
-1: Periodic Table of the Elements by Dmitri Mendeleïev. (in progress)
-2:
-3:
+<p>1: Periodic Table of the Elements by Dmitri Mendeleïev. (in progress)</p>
+<p>2:</p>
+<p>3:</p>
