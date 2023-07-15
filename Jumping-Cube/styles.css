@@ -28,7 +28,7 @@ body {
     top: 300px;
     left: 50%;
     z-index: 4;
-    animation: .6s linear 1s infinite alternate jump_cube;
+    animation: .6s ease-out 1s infinite alternate jump_cube;
 }
 
 .ground {
