@@ -25,10 +25,10 @@ body {
     height: 80px;
     position: relative;
     border: 2px solid;
-    top: 300px;
-    left: 50%;
+    top: 315px;
+    margin: auto;
     z-index: 4;
-    animation: .6s ease-out 1s infinite alternate jump_cube;
+    animation: .7s ease-out 1s infinite alternate jump_cube;
 }
 
 .ground {
@@ -50,5 +50,60 @@ body {
 }
 
 @keyframes jump_cube {
-    from {top: 300px} to {top: -75px}
+    0% {transform: scale(2, 0.2); border-radius: 50%}
+    10% {top: 325px}
+    20% {transform: scale(1, 0.4); border-radius: 0%}
+    100% {top: -75px}
+}
+
+.crack-base {
+    width: 100px;
+    height: 40px;
+    z-index: 1;
+    top: 380px;
+    margin: auto;
+    columns: 6rem auto;
+}
+
+.crack {
+    width: 2%;
+    height: 40px;
+    z-index: 1;
+    background-color: rgb(65, 103, 126);
+    position: relative;
+}
+
+.crk-one {
+    left: 30px;
+    rotate: 50deg;
+    top: -5px;
+}
+
+.crk-two {
+    left: -52px;
+    rotate: -50deg;
+    top: -5px;
+}
+
+.crk-three {
+    left: -200%;
+    rotate: 20deg;
+    top: 8px;
+}
+
+.crk-four {
+    left: -300%;
+    rotate: -10deg;
+    top: 2px;
+
+}
+
+.crk-five {
+    left: -400%;
+    rotate: 20deg;
+}
+
+.crk-six {
+    left: -520%;
+    rotate: -20deg; 
 }
