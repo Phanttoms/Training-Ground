@@ -107,3 +107,105 @@ body {
     left: -520%;
     rotate: -20deg; 
 }
+
+.fish {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    display: flex;
+}
+
+.fleft {
+    left: 300px;
+    bottom: -150px
+}
+
+.fmiddle {
+    left: 800px;
+    bottom: -170px;
+}
+
+.fright {
+    left: 1500px;
+    bottom: -50px; 
+}
+
+.torso {
+    width: 50px;
+    height: 20px;
+    background: linear-gradient(-10deg, rgb(0, 0, 0) 60%, rgb(58, 53, 53));
+    margin-top: 5px;
+    border-radius: 50% 30% 30% 40%;
+}
+
+.tail {
+    width: 10px;
+    height: 30px;
+    background: linear-gradient(-10deg, rgb(0, 0, 0) 60%, rgb(58, 53, 53));
+    border-radius: 50% 0% 0% 50%
+}
+
+.bfish {
+    position: relative;
+    top: 300px;
+    left: 1450px;
+    display: flex;
+}
+
+.bftorso {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(-10deg, rgb(0, 0, 0), rgb(22, 21, 21) );
+    border-radius: 30% 70% 50% 20%;
+    margin-left: -5px;
+}
+
+.bftail {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(-10deg, rgb(5, 5, 5), rgb(22, 21, 21) );
+    margin-top:15px;
+    border-radius: 50% 0% 0% 50% 
+}
+
+.bflantern {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-10deg, rgb(0, 0, 0), rgb(22, 21, 21) );
+    border-radius: 50% 50% 50% 50%;
+    margin-top: -20px;
+}
+
+.bftblock {
+    background-color: rgb(3, 3, 3);
+    width: 35px;
+    height: 35px;
+    border-radius: 70% 100% 100% 100%;
+    margin-left: -12px;
+    margin-top: 12px;
+}
+
+.bflblock {
+    background-color: rgb(3, 3, 3);
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 50%;
+    margin-top: -25px;
+}
+
+.bfllight {
+    background-color: yellow;
+    width: 10px;
+    height: 15px;
+    border-radius: 100% 100% 100% 100%;
+    margin-top: 15px;
+}
+
+.eye {
+    background: linear-gradient(-10deg, rgb(0,0,0), rgb(134, 131, 131));
+    width: 20px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 80% 100% 100% 80%;
+}
