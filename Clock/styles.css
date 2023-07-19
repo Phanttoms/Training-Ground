@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(104, 104, 110);
+}
+
+.circle {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(29, 24, 24);
+    border-radius: 50%;
+    position: relative;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    z-index: -2
+}
+
+.line {
+    background-color: rgba(235, 97, 200, 0.24);
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    z-index: -1;
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(30deg);
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(60deg);
+}
+
+.line:nth-of-type(4) {
+    transform: rotate(90deg);
+}
+
+.line:nth-of-type(5) {
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(150deg);
+}
+
+.line:nth-of-type(7) {
+    transform: rotate(180deg);
+}
+
+.line:nth-of-type(8) {
+    transform: rotate(210deg);
+}
+
+.line:nth-of-type(9) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(10) {
+    transform: rotate(270deg);
+}
+
+.line:nth-of-type(11) {
+    transform: rotate(300deg);
+}
+
+.line:nth-of-type(12) {
+    transform: rotate(330deg);
+}
+
+.dot {
+    background-color: rgb(109, 3, 17);
+    width: 5%;
+    height: 5%;
+    margin: auto;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hour {
+    background-color: rgb(11, 165, 37);
+    width: 25%;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    animation-name: hour;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.minute {
+    background-color: rgb(61, 33, 218);
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    animation-name: minute;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.seconde {
+    background-color: rgb(248, 0, 0);
+    width: 45%;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    animation-name: seconde;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes seconde {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes minute {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes hour {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
