@@ -60,6 +60,7 @@ html, body {
     margin-bottom: 110px;
     border: solid;
     border-color: rgba(0, 22, 22, 0.4);
+    float: left;
 }
 
 .header-section {
@@ -76,6 +77,12 @@ section article {
     font-size: 1.10em;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.two {
+    display: block;
 }
 
 .localisation {
@@ -89,4 +96,82 @@ section article {
 
 .main-section:nth-of-type(1) {
     padding-top: 1%;
+}
+
+.img-bêtes {
+    width: 70%;
+    height: auto;
+    margin-left: 14%; 
+}
+
+.img-gormok {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.img-vers {
+    width: 400px;
+    height: 300px;
+    float: right;
+}
+
+.img-glace {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.img-jaraxxus {
+    width: 70%;
+    height: auto;
+    margin-left: 14%;
+}
+
+.yolo {
+    width: 100px;
+    height: 100px;
+    float: inline-end;
+}
+
+.img-portail {
+    width: 60px;
+    height: 60px;
+    float: inline-end;
+}
+
+.img-volcan {
+    width: 60px;
+    height: 60px;
+    float: inline-end;
+}
+
+.img-champions {
+    width: 40%;
+    height: auto;
+    margin-left: 28%;
+}
+
+.img-jumelles {
+    width: 70%;
+    height: auto;
+    margin-left: 14%;
+}
+
+.img-vblanc {
+    width: 60px;
+    height: 60px;
+    float: inline-start;
+}
+
+.img-vnoir {
+    width: 60px;
+    height: 60px;
+    float: inline-end;
+}
+
+.img-anub {
+    width: 40%;
+    height: auto;
+    margin-left: 28%;
 }
