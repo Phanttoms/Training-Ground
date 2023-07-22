@@ -99,9 +99,9 @@ section article {
 }
 
 .img-bêtes {
-    width: 70%;
+    width: 50%;
     height: auto;
-    margin-left: 14%; 
+    margin-left: 24%; 
 }
 
 .img-gormok {
@@ -174,4 +174,13 @@ section article {
     width: 40%;
     height: auto;
     margin-left: 28%;
+}
+
+.boss-prés {
+    font-weight: bold;
+}
+
+.mecha {
+    font-size: 0.99em;
+    font-weight: thin;
 }
