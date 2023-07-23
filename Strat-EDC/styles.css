@@ -6,6 +6,8 @@ html, body {
     line-height: 1.5;
 }
 
+/* Titre */
+
 .header {
     color: black;
     margin: 10px;
@@ -14,6 +16,10 @@ html, body {
     font-weight: thin;
     background-color: red;
 }
+
+/* ------ */
+
+/* Navbar de gauche */
 
 #navbar {
     position: absolute;
@@ -52,6 +58,10 @@ html, body {
     font-size: 1.10em;
 }
 
+/* ------- */
+
+/* Main doc */
+
 #main-doc {
     position: absolute;
     width: 80%;
@@ -81,14 +91,6 @@ section article {
     justify-content: flex-end;
 }
 
-.two {
-    display: block;
-}
-
-.localisation {
-    align-self: center;
-}
-
 .main-section {
     border-bottom: 1px solid;
     padding-top: 3%;
@@ -97,6 +99,31 @@ section article {
 .main-section:nth-of-type(1) {
     padding-top: 1%;
 }
+
+.two {
+    display: block;
+}
+
+.boss-prés {
+    font-weight: bold;
+}
+
+.mecha {
+    font-size: 0.99em;
+    font-weight: thin;
+}
+
+/* ------- */ 
+
+/* img Présentation 1er section */
+
+.localisation {
+    align-self: center;
+}
+
+/* ------- */
+
+/* img Les bêtes du Norfendre 2eme section */
 
 .img-bêtes {
     width: 50%;
@@ -122,6 +149,10 @@ section article {
     float: right;
 }
 
+/* ------- */
+
+/* img Jaraxxus 3eme section */
+
 .img-jaraxxus {
     width: 70%;
     height: auto;
@@ -146,11 +177,19 @@ section article {
     float: inline-end;
 }
 
+/* ------- */
+
+/* img Les champions 4eme section */
+
 .img-champions {
     width: 40%;
     height: auto;
     margin-left: 28%;
 }
+
+/* ------- */
+
+/* img Les Jumelles 5eme section */
 
 .img-jumelles {
     width: 70%;
@@ -170,17 +209,14 @@ section article {
     float: inline-end;
 }
 
+/* ------- */
+
+/* img Anub'Arak 6eme section */
+
 .img-anub {
     width: 40%;
     height: auto;
     margin-left: 28%;
 }
 
-.boss-prés {
-    font-weight: bold;
-}
-
-.mecha {
-    font-size: 0.99em;
-    font-weight: thin;
-}
+/* ------- */
