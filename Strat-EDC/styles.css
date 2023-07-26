@@ -7,18 +7,17 @@ html, body {
     width: 100%;
     height: auto;
     min-width: 290px;
-    color: #fdfdfd;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 body {
     width: 100%;
     height: auto;
     background-image: url("https://i.redd.it/jd8p96j52w721.png");
-    background-size: cover;
-    background-position: center;
+    background-clip: border-box;
+    background-repeat: repeat;
 }
 
 /* Titre */
@@ -72,13 +71,33 @@ body {
     width: 100%;
 }
 
-#navbar a {
+#navbar .nav-link {
     display: block;
     padding: 10px 30px;
     color: rgb(255, 249, 158);
     text-decoration: none;
     cursor: pointer;
     font-size: 1.10em;
+}
+
+.proj {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-top: solid rgb(251, 255, 13);
+    background-color: rgb(252, 255, 100);
+}
+
+.proj p {
+    font-size: 1.3em;
+    font-weight: thin;
+    padding: 5px;
+    color: red
+}
+
+.proj .proj-link {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* ------- */
@@ -142,6 +161,10 @@ section ul, ol {
 
 .main-section:nth-of-type(1) {
     padding-top: 1%;
+}
+
+.main-section:nth-of-type(6) {
+    border-bottom: none;
 }
 
 .two {
