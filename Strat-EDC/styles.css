@@ -26,7 +26,6 @@ body {
     color: rgb(255, 249, 158);
     text-align: center;
     font-size: 1.8em;
-    font-weight: thin;
     background-color: rgb(43, 43, 43);
     margin-bottom: 5px
 }
@@ -90,7 +89,6 @@ body {
 
 .proj p {
     font-size: 1.3em;
-    font-weight: thin;
     padding: 5px;
     color: red
 }
@@ -121,7 +119,6 @@ body {
     margin: 0;
     color: rgb(255, 249, 158);
     font-size: 1.8em;
-    font-weight: thin;
 }
 
 section article {
@@ -139,13 +136,15 @@ section h2 {
     line-height: 3em
 }
 
-section h1 {
+section h3 {
     color: pink;
+    font-size: 1.0em;
 }
 
 section p {
     color: rgb(158, 243, 239);
-    margin: 10px
+    margin: 10px;
+    text-indent: 30px;
 }
 
 section ul, ol {
@@ -177,7 +176,6 @@ section ul, ol {
 
 .mecha {
     font-size: 0.99em;
-    font-weight: thin;
 }
 
 .vid {
