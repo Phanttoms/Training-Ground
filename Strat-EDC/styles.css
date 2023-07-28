@@ -106,7 +106,7 @@ body {
     position: absolute;
     width: 80%;
     margin-left: 310px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 110px;
     border: solid;
     border-color: rgb(251, 255, 13);
@@ -116,7 +116,7 @@ body {
 
 .header-section {
     text-align: center;
-    margin: 0;
+    margin: 0px;
     color: rgb(255, 249, 158);
     font-size: 1.8em;
 }
@@ -131,12 +131,13 @@ section article {
     justify-content: flex-end;
 }
 
-section h2 {
+section h3 {
     color: rgb(8, 105, 252);
-    line-height: 3em
+    line-height: 3em;
+    font-size: 1.5em
 }
 
-section h3 {
+section h4 {
     color: pink;
     font-size: 1.0em;
 }
