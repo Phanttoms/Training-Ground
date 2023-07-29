@@ -110,6 +110,47 @@ console.log('Bravo ! vous avez deviné')
 
 //---------------------------------------
 */
+/*
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
 
+const solution = getRandomInt(10);
+console.log(solution);
 
+function isRight(n) {
+    return solution === n;
+}
+
+function guess() {
+    const number = prompt("Entrez un chiffre") * 1;
+    return isRight(number);
+}
+
+for (i = 0; i < 3; i++) {
+    if (guess()) {
+        console.log("GG");
+        break;
+    } else if (i === 2) {
+        console.log("noob");
+    }
+}
+
+//-------------------------------------------
+*/
+/*
+
+function isPremier(n) {
+    for (i = 2; i < n; i++) {
+        if(n % i === 0) {
+            return false;
+        }
+    } 
+    return n > 1;
+}
+
+console.log(isPremier());
+
+//--------------------------------------------
+*/
