@@ -6,3 +6,4 @@ Training Ground
 <p>3: Clock Simple.</p>
 <p>4: Strategie d'EDC.</p>
 <p>5: Test Brut (focus Javascript)</p>
+<p>6: Recette que j'aime</p>
