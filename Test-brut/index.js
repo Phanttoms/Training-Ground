@@ -154,3 +154,124 @@ console.log(isPremier());
 
 //--------------------------------------------
 */
+/*
+// Exercice
+// Créez une fonction qui vérifier l’égalité de deux paramètres a et b. La valeur et le type de paramètres doivent être testés afin d’avoir une égalité. La fonction doit renvoyer TRUE si les paramètres sont égaux et FALSE s’ils sont différents.
+
+function checkEq(a, b) {
+    return a === b;
+}
+
+// Afficher la sortie
+console.log(checkEq(5, 5));
+console.log(checkEq(5, 0));
+console.log(checkEq(5, false));
+console.log(checkEq(5, "5"));
+
+//--------
+*/
+/*
+// Créez une fonction qui renvoie TRUE si une chaîne est vide et sinon renvoie FALSE.
+
+function isEmpty(str) {
+	return str === "";
+}
+
+// Afficher la sortie
+console.log(isEmpty("1"));
+console.log(isEmpty("WayToLearnX"));
+console.log(isEmpty("  "));
+console.log(isEmpty(""));
+console.log(isEmpty(''));
+
+//-------
+*/
+/*
+// Avec deux chaînes, str1 et str2, renvoyez une seule chaîne au format « str1 | str2 ».
+
+function concatStr(str1, str2) {
+	return `${str1} | ${str2}`;
+}
+
+// Afficher la sortie
+console.log(concatStr("True", "False"));
+console.log(concatStr("On", "Off"));
+console.log(concatStr("A", "B"));
+
+//---------
+*/
+/*
+// Créez une fonction qui prend un nom et renvoie un message d’accueil sous la forme d’une chaîne. N’utilisez pas une fonction normale mais utilisez une fonction fléchée(Arrow)
+
+const msg = name => `Hello ${name}, Welcome to WayToLearnX!`;
+
+// Afficher la sortie
+console.log(msg("Thomas"));
+console.log(msg("Alex"));
+console.log(msg("Emily"));
+
+//--------
+*/
+/*
+// Écrivez une fonction qui renvoie la longueur d’une chaîne. Utiliser une fonction récursive.
+
+function size(str, n = 0) {
+    if(str[n] === undefined) {
+      return n;
+    }
+   return size(str, n + 1);
+}
+
+// Afficher la sortie
+console.log(size("alex"));
+console.log(size("x"));
+console.log(size(""));
+
+//------
+*/
+/*
+// Créez une fonction qui prend deux chaînes str1 et str2 comme arguments et renvoie TRUE si le nombre total de caractères dans la première chaîne est égal au nombre total de caractères dans la deuxième chaîne sinon renvoie FALSE.
+
+function compareSize(str1, str2) {
+	return str1.length === str2.length;
+}
+
+// Afficher la sortie
+console.log(compareSize("AA", "BB"));
+console.log(compareSize("123", "1"));
+console.log(compareSize("Ali", "Bob"));
+
+//------
+*/
+/*
+// Créez une fonction qui prend la hauteur et la largeur et trouve le périmètre d’un rectangle.
+
+function getPerimeter(height, width) {
+	return (height + width) * 2;
+}
+
+// Afficher la sortie
+console.log(getPerimeter(2, 6));
+console.log(getPerimeter(3, 10));
+console.log(getPerimeter(1, 5));
+
+//------
+*/
+/*
+// Créez une fonction qui prend un nombre comme argument et renvoie « pair » pour les nombres pairs et « impair » pour les nombres impairs.
+
+function check(n) {
+	if (n % 2 === 0) {
+        return "Pairs";
+    } else {
+        return "Impair"
+    }
+}
+
+// Afficher la sortie
+console.log(check(2));
+console.log(check(7));
+console.log(check(22));
+
+// ------
+*/
