@@ -273,5 +273,138 @@ console.log(check(2));
 console.log(check(7));
 console.log(check(22));
 
-// ------
+//------
+*/
+/*
+// Créez une fonction qui prend une chaîne et renvoie TRUE ou FALSE, selon que les caractères sont en ordre ou non.
+
+function checkOrder(str) {
+	const test = str.split("").sort().join("");
+    return test === str
+
+}
+
+// Afficher la sortie
+console.log(checkOrder("abc"));
+console.log(checkOrder("zyx"));
+console.log(checkOrder("123"));
+console.log(checkOrder("aabbcc"));
+
+//------
+*/
+/*
+// Créez une fonction qui ajoute une sous-chaîne à la fin de chaque chaîne du tableau.
+
+function addEnd(tableau, fin) {
+// solution 1	return `"${tableau[0] + fin}", "${tableau[1] + fin}", "${tableau[2] + fin}"`
+// solution 2    return tableau.map(mot => mot + fin);
+}
+
+// Afficher la sortie
+console.log(addEnd(["accept", "achet", "adapt"], "able"));
+console.log(addEnd(["aim", "act", "ard"], "ant"));
+
+//-------
+*/
+/*
+// Créez une fonction qui vérifie si l’argument est un entier ou une chaîne. Renvoie « int » s’il s’agit d’un entier et « string » s’il s’agit d’une chaîne.
+
+function checkIntOrStr(x) {
+	if (typeof x === "number") {
+        return "int";
+    } else if (typeof x === "string") {
+        return "string";
+    }
+}
+
+// Afficher la sortie
+console.log(checkIntOrStr("WayToLearnX"));
+console.log(checkIntOrStr(1));
+console.log(checkIntOrStr("250"));
+
+//--------
+*/
+/*
+// Créez une fonction qui prend une phrase et renvoie le nombre de mots.
+
+function count(str) {
+	return str.split(" ").length;
+}
+
+// Afficher la sortie
+console.log(count("Welcome to WayToLearnX"));
+console.log(count("Hello World"));
+console.log(count("I am going to my school"));
+
+//------
+*/
+/*
+// Créez une fonction pour multiplier toutes les valeurs d’un tableau par la longueur du tableau donné.
+
+function mulByLen(tab) {
+	return tab.map(i => i * tab.length);
+}
+
+// Afficher la sortie
+console.log(mulByLen([1, 1, 1]));
+console.log(mulByLen([1, 2, 3]));
+console.log(mulByLen([0, 0, 0, 0, 2]));
+
+//------
+*/
+/*
+// Créez une fonction pour supprimer toutes les valeurs nulles d’un tableau.
+
+function deleteNull(tab) {
+	return tab.filter(i => i !== null)
+}
+
+// Afficher la sortie
+console.log(deleteNull(["Alex", null, "Emily", "Bob"]));
+console.log(deleteNull([0, 1, null, 2, null, 3]));
+console.log(deleteNull([null, null, null]));
+
+//------
+*/
+/*
+// Une année bissextile a un jour ajouté à février pour être synchronisée avec l’année saisonnière. Une année bissextile apparaît avec une fréquence régulière, déterminée par la règle ci-dessous:
+// Une année doit être divisible par 400 ou divisible par 4 et non pas 100.
+// Vous devez implémenter une fonction qui renvoie TRUE si c’est une année bissextile, ou FALSE si ce n’est pas le cas.
+
+function bissextile(year) {
+	if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Afficher la sortie
+console.log(bissextile(2020));
+console.log(bissextile(1400));
+console.log(bissextile(2000));
+
+//------
+*/
+/*
+// Créez une fonction qui trouve tous les nombres pairs de 1 au nombre donné.
+
+function nbrPaire(n) {
+    let paire = [];
+  
+    for (let i = 1; i <= n; i++) {
+      if (i % 2 === 0) {
+        paire.push(i);
+      }
+    }
+    
+    return paire;
+}
+
+// Afficher la sortie
+console.log(nbrPaire(6));
+console.log(nbrPaire(4));
+console.log(nbrPaire(2));
+
+//-----
 */
