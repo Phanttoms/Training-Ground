@@ -1,7 +1,23 @@
 :root {
-    --first-color: red;
-    --second-color: green;
-    --third-color: blue;
+    /* Main */
+    --first-color: rgb(255, 255, 255);
+    /*--------*/
+    /* Body */
+    --second-color-one: rgb(99, 198, 255);
+    --second-color-two: rgb(69, 89, 179);
+    --second-color-three: rgb(47, 63, 131);
+    --second-color-four: rgb(23, 42, 146);
+    /*--------*/
+    /* Header */
+    --third-color: rgb(155, 223, 255);
+    /*--------*/
+    /* Navbar */
+    --fourth-color-one: rgb(0, 153, 255);
+    --fourth-color-two: rgb(228, 124, 39);
+    --fourth-color-three: rgb(43, 190, 43);
+    --fourth-color-four: rgb(226, 224, 74);
+    --fourth-color-five: rgb(255, 64, 214);
+    /*-------*/
 }
 
 /* Base */
@@ -18,7 +34,12 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    background-color: var(--second-color);
+    background: linear-gradient(
+        var(--second-color-one),
+        var(--second-color-two),
+        var(--second-color-three),
+        var(--second-color-four)
+    );
 }
 
 .main {
@@ -37,6 +58,7 @@ header {
     background-color: var(--third-color);
     text-align: center;
     position: absolute;
+    padding: 10px;
 }
 
 /*-------*/
@@ -48,7 +70,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 2%;
 }
 
@@ -57,17 +79,36 @@ header {
     height: auto;
     border: solid 2px;
     margin: 2%;
-    padding: 5%;
 }
 
 h4 {
     text-align: center;
     margin-bottom: 2%;
-    border: solid;
+}
+
+#one h4 {
+    background-color: var(--fourth-color-one);
+}
+
+#two h4 {
+    background-color: var(--fourth-color-two);
+}
+
+#three h4 {
+    background-color: var(--fourth-color-three);
+}
+
+#four h4 {
+    background-color: var(--fourth-color-four);
+}
+
+#five h4 {
+    background-color: var(--fourth-color-five);
 }
 
 ul {
     list-style-type: none;
+    margin: 10px;
 }
 
 .user {
@@ -75,13 +116,16 @@ ul {
     height: auto;
     border: solid 2px;
     margin: 2%;
-    padding: 5%;
     display: inline-flex;
     flex-direction: column;
 }
 
-.user-form {
-    margin: 2%
+label {
+    margin-top: 10px;
+}
+
+.user-form, label {
+    margin-left: 10px; 
 }
 
 .log-form {
@@ -97,7 +141,7 @@ ul {
     display: inline-flex;
     flex-direction: column;
     position: relative;
-    margin: 5%;
+    margin: 8%;
 }
 
 h2 {
@@ -113,10 +157,11 @@ h2 {
 /* Img 2x2 */
 
 .img-cube {
-    width: 50%;
+    width: 60%;
     height: auto;
     background-color: yellow;
     align-self: center;
+    margin-top: 2%
 }
 
 /*--------*/
