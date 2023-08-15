@@ -8,7 +8,7 @@
     </head>
     <body>
         <section class="main">                      <!-- Doc complet -->
-            <header>                                <!-- Titre global -->
+            <header id="2x2">                                <!-- Titre global -->
                 <h1>FRANCOCUBE</h1>
                 <p>Méthodes pour tous</p>
             </header>
@@ -23,7 +23,7 @@
                 <nav class="navbar" id="two">           <!-- Navbar 2 Les classiques -->
                     <h4>Les classiques</h4>
                     <ul>
-                        <li><a>Rubik's Cube 2x2</a></li>
+                        <li><a class="nav-link" href="#2x2">Rubik's Cube 2x2</a></li>
                         <li><a>Rubik's Cube 3x3</a></li>
                         <li><a>Rubik's Cube 4x4</a></li>
                         <li><a>Rubik's Cube 5x5</a></li>
@@ -70,7 +70,7 @@
                         type="text" 
                         placeholder="Enter your username" 
                         required
-                    />
+                    >
                     <label id="password-label" for="password">Password:</label>
                     <input 
                         id="password"
@@ -78,12 +78,12 @@
                         type="text" 
                         placeholder="Enter your password" 
                         required
-                    />
+                    >
                     <input
                         class="log-form" 
                         type="submit" 
                         value="Log in" 
-                    />
+                    >
                 </form>
             </div>             
             <article class="sujet">                     <!-- Sujet principal du doc -->
@@ -106,5 +106,11 @@
                 >
             </article>
         </section>
+        <footer>
+            <div class="ref">
+                <h4>Site test, model pris pour reference ==> <a class="nav-link" href="https://www.francocube.com/pocket_index" target="_blank">ici</a></h4>
+                <h4>Mon Github ==> <a class="nav-link" href="https://github.com/Phanttoms" target="_blank">ici</a></h4>
+            </div>
+        </footer>
     </body>
 </html>
