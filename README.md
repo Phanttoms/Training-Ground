@@ -9,5 +9,12 @@ Training Ground
 <p>6: Recette que j'aime</p>
 <p>7: Rubik's Strategie (en cours)</p>
     <ol>
-        <li>2x2x2</li>
+        <li>(en cours)</li>
+        <li>Les classiques</li>
+            <ol>
+                <li>2x2x2</li>
+                <li>3x3x3</li>
+            </ol>
+        <li>(en cours)</li>
+        <li>(en cours)</li>
     </ol>
