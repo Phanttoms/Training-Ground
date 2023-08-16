@@ -37,6 +37,10 @@
     font-family: 'Georgia', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -240,6 +244,11 @@ label {
 h2 {
     margin-top: 2%;
     margin-bottom: 1%;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 .sujet p {
@@ -248,6 +257,7 @@ h2 {
 
 /*-*/
 /* 3x3x3 */
+/* nav 3x3 */
 
 .boxnav-3x3 {
     width: 100%;
@@ -267,6 +277,28 @@ h2 {
     line-height: 23px;
 }
 
+/*-*/
+/* Main 3x3 */
+
+h5 {
+    font-size: 18px;
+    margin-top: 30px
+}
+
+.espace {
+    margin-top: 40px
+}
+
+.back-top {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+.back-top:hover {
+    background: rgb(206, 199, 199);;
+}
 
 /*-*/
 
