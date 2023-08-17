@@ -259,9 +259,6 @@ h3 {
     margin-top: 40px
 }
 
-/*-*/
-/* Simple2x2 */
-
 code {
     display: block;
     text-align: left;
@@ -274,8 +271,15 @@ code {
     padding: 15px;
     margin: 20px;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
     font-family: cursive;
+}
+
+.box-code {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*-*/
