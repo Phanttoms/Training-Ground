@@ -107,7 +107,7 @@ header {
 
 .nav-link:link, .nav-link:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(50, 145, 235);
 }
 
 .nav-link:hover {
@@ -255,7 +255,7 @@ h3 {
 /*sous categorie*/
 h5 {
     font-size: 18px;
-    margin-top: 30px
+    margin-top: 10px
 }
 
 .sujet p {
