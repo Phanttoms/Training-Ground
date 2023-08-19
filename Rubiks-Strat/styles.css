@@ -231,7 +231,6 @@ label {
 /*--------------------------------------------------------*/
 /* Sujet Principal du doc */
 /* all */
-
 .sujet {
     width: 100%;
     height: auto;
@@ -241,24 +240,34 @@ label {
     margin: 8%;
 }
 
+/*le titre d'un sujet*/
 h2 {
     margin-top: 2%;
     margin-bottom: 1%;
     font-size: 30px;
 }
 
+/*les categorie du sujet*/
 h3 {
     font-size: 25px;
+}
+
+/*sous categorie*/
+h5 {
+    font-size: 18px;
+    margin-top: 30px
 }
 
 .sujet p {
     margin: 1%
 }
 
+/*espace au dessus d'un h3 ciblé*/
 .espace {
     margin-top: 40px
 }
 
+/*code*/
 code {
     display: block;
     text-align: left;
@@ -306,11 +315,6 @@ code {
 
 /*-*/
 /* Main 3x3x3 */
-
-h5 {
-    font-size: 18px;
-    margin-top: 30px
-}
 
 .back-top {
     text-decoration: none;
