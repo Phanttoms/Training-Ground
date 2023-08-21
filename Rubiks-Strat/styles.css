@@ -255,7 +255,6 @@ h3 {
 /*sous categorie*/
 h5 {
     font-size: 18px;
-    margin-top: 10px
 }
 
 .sujet p {
@@ -265,6 +264,11 @@ h5 {
 /*espace au dessus d'un h3 ciblé*/
 .espace {
     margin-top: 40px
+}
+
+/*hauteur d'arrivé d'un lien*/
+.height-link {
+    padding-top: 40px;
 }
 
 /*code*/
@@ -318,7 +322,7 @@ code {
 
 .back-top {
     text-decoration: none;
-    color: black;
+    color: rgb(250, 59, 59);
     font-size: 12px;
     align-self: flex-end;
 }
