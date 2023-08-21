@@ -90,7 +90,7 @@
                 <img
                     alt="cube 3x3"
                     class="img-cube"
-                    src="azerty"
+                    src="https://images.king-jouet.com/6/gu40484_6.jpg"
                 >
                 <!-- Debut sujet -->
                 <h2>Résoudre le Rubik's cube en 30 secondes : méthode simple ET rapide.</h2>
@@ -109,23 +109,126 @@
                         </ul>
                     </nav>
                 </div>
-
+                
                 <h3>Les deux premiers étages (F2L)</h3>
+                <!-- Etape 1 -->
                 <span class="height-link" id="one-m3x3"></span>
+                <h5>Etape 1, faire la croix et finir la première face sauf un coin</h5>
+                <p>Cette étape est très intuitive. Vous devez déjà l'avoir vu dans la méthode facile, on va donc passer très vite. On va faire la croix directement sur la face du bas, comme ça, on n'aura pas à retourner le Rubik's cube pour la suite. C'est un peu perturbant au début, mais ça n'est en fait pas plus difficile. Juste un petit exemple devrait suffire :</p>
+                <h5>Arêtes :</h5>
+                <div class="box-code">
+                    <code>RFL'DF'L2</code>
+                </div>
+                <h5>Coins :</h5>
+                <div class="box-code">
+                    <code>yRU2R'U'RUR'yRU'R'yRUR'y</code>
+                </div>
+                <h5>Le tout :</h5>
+                <div class="box-code">
+                    <code>RFL'DF'L2yRU2R'U'RUR'yRU'R'yRUR'y</code>
+                </div>
+                <p>Astuce : essayez de faire la croix sur la face gauche ou sur la face du bas, la transition avec la suite sera grandement facilitée. Il est toujours possible de faire la croix en 8 mouvements et même en 7 mouvements dans la grande majorité des cas.</p>
+                <p>Vous pouvez utiliser les symétries pour insérer les coins sans jamais faire de regrip (un regrip, c'est lorsque l'on tourne le Rubik's cube pour changer la position de ses mains). Notez bien que même si cette solution fait plus de mouvement, il est possible de l'exécuter bien plus vite. Je vous mets un exemple ci-dessous :</p>
+                <div class="box-code">
+                    <code>R'URU2'R'U'RU2L'U'LU'LU'L'U2'LUL'</code>
+                </div>
+                <p>Bravo, vous venez de finir la première étape de la solution. Notez bien que tous les cas ne sont pas traités ici, cependant vous devriez vous en tirer, cette étape étant plutôt facile. Notez bien que vous n'êtes pas obligé d'aligner la première face avec les couleurs des centres, il faudra la tourner après de toute façon. Passons maintenant à l'étape 2.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 2 -->
+                <span class="height-link" id="two-m3x3"></span>
+                <h5>Etape 2, faire le deuxième étage sauf une arête.</h5>
+                <p>Dans cette étape, il va falloir placer les arêtes du deuxième étage du Rubik's cube en se servant du coin manquant.</p>
+                <p>Ici, je vais vous présenter la séquence de base puis un exemple, il ne s'agit pas d'apprendre, mais surtout d'observer ce qui se passe et de comprendre :</p>
+                <h5>La séquence :</h5>
+                <div class="box-code">
+                    <code>RU'R'</code>
+                </div>
+                <h5>Exemple :</h5>
+                <div class="box-code">
+                    <code>uRU'R'uRUR'u2F'UF</code>
+                </div>
+                <p>Bravo, vous venez de finir la deuxième étape. Notez bien que tous les cas ne sont pas traités ici, cependant vous devriez vous en tirer, cette étape étant plutôt facile. Passons maintenant à l'étape 3. Cela peut sembler impressionnant, mais vous devriez pouvoir y arriver.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 3 -->
+                <span class="height-link" id="three-m3x3"></span>
+                <h5>Etape 3, finir les deux premiers étages.</h5>
+                <p>Le but de cette étape est de finir les deux premiers étages. Cela n'est composé que de manipulations que vous avez déjà faites. Il va falloir placer le coin de la première face, puis l'arête du deuxième étage, chaque fois de la même façon que dans la méthode facile. Ceci ne devrait pas vous poser de problèmes. On va tout de même faire un petit exemple. On vous donne ici aussi une deuxième méthode pour placer l'arête, qui pourra peut-être se révéler rapide. On présente aussi une astuce pour retourner une arête bien placée.</p>
+                <div class="box-code">
+                    <code>(R'U')2R'(UR)2</code>
+                    <code>URUR'U'F'U'F</code>
+                    <code>RUR'U2'RU2'R'UF'U'F</code>
+                    <code>RUR'(R'U')2R'(UR)2D'</code>
+                </div>
+                <p>Bravo, vous venez de finir la troisième étape. Ici, tous les cas sont représentés. Pour sortir une arête qui serait dans le second étage et l'envoyer dans le dernier étage, il suffit d'en mettre une autre à sa place, et par conséquent elle ne pourra plus y être ;).</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <h3 class="espace">Le dernier étage</h3>
+                <!-- Etape 4 -->
+                <span class="height-link" id="four-m3x3"></span>
+                <h5>Etape 4, Faire une croix sur la dernière face.</h5>
+                <p>Cette étape est le même que dans la méthode facile. On va donc répéter la même chose. Sauf qu'ici, le cas 3 a sa propre formule. Afin de ne pas regripper, on se met dans la bonne position via U, U' ou U2. Le but de cette étape sera donc de réaliser une croix jaune (si vous avez commencé par la face blanche). Encore une fois, plusieurs cas peuvent se présenter :</p>
+                <h5>Cas 1 :</h5>
+                <div class="box-code">
+                    <code>FRUR'U'F'</code>
+                </div>
+                <h5>Cas 2 :</h5>
+                <div class="box-code">
+                    <code>fRUR'U'f'</code>
+                </div>
+                <h5>Cas 3 :</h5>
+                <div class="box-code">
+                    <code>FRUR'U'F'fRUR'U'f'</code>
+                </div>
+                <p>Bravo, vous venez de finir la quatrième étape.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 5 -->
+                <span class="height-link" id="five-m3x3"></span>
+                <h5>Etape 5, Orienter les coins.</h5>
+                <p>Le but de cette étape est de retourner les coins dans le bon sens. Cette étape est plus rapide que dans la méthode facile car on n'a pas à s'occuper du placement des arêtes. On peut donc utiliser des passes plus simples. Notez que vous n'êtes pas obligé de tout apprendre d'un coup, ce que vous savez déjà de la méthode facile vous permet de finir cette étape sans problèmes, il faut donc apprendre les cas petit à petit. Afin de ne pas regripper, on se met dans la bonne position via U, U' ou U2.</p>
+                <div class="box-code">
+                    <code>RUR'URU2R'</code>
+                    <code>RU2'R'U'RU'R'</code>
+                    <code>RU(R'URU')2U'R'</code>
+                    <code>RU2'R2'U'R2U'R2'U2R</code>
+                    <code>l'U'RD'R'URDx'</code>
+                    <code>l'URD'R'U'RDx'</code>
+                    <code>R2DR'U2RD'R'U2R'</code>
+                </div>
+                <p>Bravo, vous venez de finir la cinquième étape de la solution du Rubik's cube.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 6 -->
+                <span class="height-link" id="six-m3x3"></span>
+                <h5>Etape 6, Placer les coins.</h5>
+                <p>Quelle que soit la disposition des coins, il est possible de bien en placer deux. Si nécessaire, on va échanger les deux autres et tous les coins seront bien placés. Il faut noter que certaines passes font tourner la face du haut en même temps. Ca n'est pas grave, vous pouvez la remettre en face entre chaque étape dans un premier temps, mais le mieux est de la remettre comme il faut à la fin, ce qui économise des coups entres chaque passe. Ici encore, l'astuce est de ne pas regripper : on se met dans la bonne position via U, U' ou U2.</p>
+                <div class="box-code">
+                    <code>RUR'U'R'FR2U'R'U'RUR'F'</code>
+                    <code>FRU'R'U'RUR'F'RUR'U'R'FRF'</code>
+                </div>
+                <p>Bravo, vous venez de finir la sixième étape.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
-
-
-
+                <!-- Etape 7 -->
+                <span class="height-link" id="seven-m3x3"></span>
+                <h5>Etape 7, Placer les arêtes.</h5>
+                <p>Ici, c'est très simple, on reconnaît le cas et on applique la passe : On peut noter que la première suffit à finir le Rubik's cube. Apprenez la donc en premier.</p>
+                <div class="box-code">
+                    <code>R2U'R'U'RURURU'R</code>
+                    <code>R'UR'U'R'U'R'URUR2</code>
+                    <code>M2'UM2'U2M2'UM2'</code>
+                    <code>UR'U'RU'RURU'R'URUR2U'R'U</code>
+                </div>
+                <p>Bravo, vous connaissez maintenant <strong>une méthode qui va vous permettre avec un peu d'entraînement de finir le Rubik's cube rapidement, avec très peu d'algorithmes à apprendre</strong>.</p>
+                <p>Avec cette méthode, vous possédez une base très solide pour évoluer vers les OLL et les PLL de la méthode J. Fridrich, ou vers d'autres méthodes de speedcubing... il ne reste plus qu'à vous entraîner !</p>
+                <a class="back-top" href="#top">Haut de page</a>
                 <!-- Fin sujet -->
                 <img
                     alt="cube 3x3"
                     class="img-cube"
-                    src="azerty"                
+                    src="https://joueclub-joueclub-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/696260ae1aadd63d6dfd812a92aa1fa0b59fe85d_41004380.jpeg"                
                 >
             </article>
         </section>

@@ -268,7 +268,7 @@ h5 {
 
 /*hauteur d'arrivé d'un lien*/
 .height-link {
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /*code*/
@@ -278,7 +278,7 @@ code {
     white-space: pre-line;
     position: relative;
     word-break: normal;
-    word-wrap: normal;
+    word-wrap: break-word;
     line-height: 2;
     background-color: #f7f7f7;
     padding: 15px;
