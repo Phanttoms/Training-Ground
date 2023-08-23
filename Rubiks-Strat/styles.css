@@ -199,7 +199,7 @@ h4 {
     border-color: var(--fourth-color-five-var)
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 10px;
 }
@@ -269,6 +269,12 @@ h5 {
 /*hauteur d'arrivé d'un lien*/
 .height-link {
     padding-top: 30px;
+}
+
+/* ul du doc avec dot */
+.dot {
+    list-style-type: square;
+    padding-left: 35px;
 }
 
 /*code*/

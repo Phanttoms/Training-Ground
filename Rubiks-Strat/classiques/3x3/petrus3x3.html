@@ -93,7 +93,79 @@
                     src="azerty"
                 >
                 <!-- Debut sujet -->
+                <h2>Résoudre le rubik's cube, la méthode de Lars Petrus</h2>
+                <p>Il faut tout d'abord noter que cette méthode est très complexe, et elle ne se destine qu'à des gens voulant faire du speedcubing ou le FMC (Fewest Moves Challenge / résoudre le cube en un minimum de mouvements). Si vous faites partie de ces gens, la suite est pour vous ;). Notez bien que j'explique ici comment faire du speedcubing. Il y a des détails qui diffèrent si l'on veut faire du FMC. En effet, pour le speedcubing, on veut des méthodes systématiques où l'on réfléchit peu. C'est sous cet angle que nous allons présenter la chose.</p>
+                <p>Allez voir le site de <a class="nav-link" href="https://lar5.com/" target="_blank">Lars Petrus</a> ou il explique sa méthode (en anglais).</p>
+                <h5>Les étapes sont les suivantes, plus des astuces à la fin :</h5>
+                <div class="boxnav-3x3">                <!-- Nav box -->
+                    <nav class="nav-3x3">               <!-- Nav barre -->
+                        <ul>
+                            <li><a class="nav-link" href="#one-p3x3">Etape 1, faire un cube 2x2x2.</a></li>
+                            <li><a class="nav-link" href="#two-p3x3">Etape 2, Extension du cube 2x2x2 vers un cube 3x2x2.</a></li>
+                            <li><a class="nav-link" href="#three-p3x3">Etape 3, Orientation des arêtes restantes.</a></li>
+                            <li><a class="nav-link" href="#four-p3x3">Etape 4, Fin des deux premiers étages.</a></li>
+                            <li><a class="nav-link" href="#five-p3x3">Etape 5, Orientation et placement des coins de la dernière face.</a></li>
+                            <li><a class="nav-link" href="#six-p3x3">Etape 6, Permutation des arêtes.</a></li>
+                            <li><a class="nav-link" href="#seven-p3x3">Variations de la méthode Petrus pour le speedcubing.</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Etape 1 -->
+                <span class="height-link" id="one-p3x3"></span>
+                <h5>Etape 1, faire un cube 2x2x2.</h5>
+                <p>Cette étape est relativement facile. Elle ne devrait pas vous poser de problèmes si vous souhaitez vous attaquer à Petrus. Afin d?aller plus vite, je vous conseille de toujours choisir les mêmes couleurs. Cela va vous aider dans votre repérage. Ensuite, je vous conseille de former votre cube 2x2x2 dans le coin arrière gauche en bas du cube, comme ça vous aurez les faces R U et F libre pour la suite, et vous irez donc plus vite.</p>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 2 -->
+                <span class="height-link" id="two-p3x3"></span>
+                <h5>Etape 2, Extension du cube 2x2x2 vers un cube 3x2x2.</h5>
+                <p>De même que la précédente. Cette étape est intuitive. Il faut juste ne pas utiliser les faces "bloquées" par le cube 2x2x2, afin de ne pas le défaire. Si vous avez suivi mes conseils pour l?étape précédente, vous aurez donc les faces R U et F de libre pour faire cette étape. Je vous ai mis un petit exemple des deux premieres étapes en dessous.</p>
+                <div class="box-code">
+                    <code>L2UFD'L'D'UL2FURFU'R</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 3 -->
+                <span class="height-link" id="three-p3x3"></span>
+                <h5>Etape 3, Orientation des arêtes restantes.</h5>
+                <p>Ici, il va bien falloir comprendre comment on définit une arête bien ou mal orientée. En fait c'est simple il faut suivre ces règles :</p>
+                <ul class="dot">
+                    <li>Une arête ayant sur elle la couleur de la face du haut doit être orientée de telle façon que cette couleur soit sur la face du haut ou ne soit pas sur la face avant.</li>
+                    <li>Une arête ayant sur elle la couleur de la face avant doit être orientée de telle façon que cette couleur soit sur la face avant ou ne soit pas sur la face du haut.</li>
+                </ul>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 4 -->
+                <span class="height-link" id="four-p3x3"></span>
+                <h5>Etape 4, Fin des deux premiers étages.</h5>
+                <p>Comme souvent avec Petrus, on va faire dans l'intuitif. Cette étape ressemble beaucoup au F2L de Fridrich. Il va falloir mettre les pièces manquantes dans les deux premiers étages. Si la tâche est facile pour les 3 premières, elle est plus difficile pour insérer le dernier coin et la dernière arête. Remarquez que l'on se retrouve dans une configuration similaire à celle de la méthode Vandenbergh-Harris</p>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 5 -->
+                <span class="height-link" id="five-p3x3"></span>
+                <h5>Etape 5, Orientation et placement des coins de la dernière face.</h5>
+                <p>Ici, c'est très systématique. On reconnaît le cas et on applique. Afin de ne pas regripper, je vous conseille de faire U, U' ou U2 pour bien placer votre cas avant de le résoudre. Vous pouvez vous en sortir grâce à sune et nicklas alors n'apprenez tous ces cas que lorsque vous maîtriserez bien le reste de la méthode.</p>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 6 -->
+                <span class="height-link" id="six-p3x3"></span>
+                <h5>Etape 6, Permutation des arêtes.</h5>
+                <p>Normalement, on arrive ici à quelque chose que vous savez faire. Ici aussi, afin d'éviter les regrips, je vous conseille de faire U, U' ou U2 de résoudre le cas et de bien aligner la dernière face ensuite.</p>
+                <div class="box-code">
+                    <code>R2U'R'U'(RU)2RU'R</code>
+                    <code>R'U(R'U')2R'URUR2</code>
+                    <code>M2'UM2'U2M2'UM2'</code>
+                    <code>UR'(U'R)2URU'R'URUR2U'R'U</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
                 
+                <!-- Variation Etape 7 -->
+                <span class="height-link" id="seven-p3x3"></span>
+                <h5>Variations de la méthode Petrus pour le speedcubing.</h5>
+                <p>Pour le speedcubing, voici quelques astuces à utiliser avec Petrus. Tout d'abord, faites votre premier bloc en bas à gauche au fond de votre cube, comme expliqué plus haut. Complétez les faces R,U et F, puis orientez les arêtes. Faites ensuite un regrip de façon à avoir votre bloc bien fait en bas à gauche du cube. Vous pourrez ainsi compléter les deux premiers étages avec l'aide des faces R et U seulement.</p>
+                <p>Ensuite, une variation s'inspirant de la méthode de Fridrich est très utilisée. Elle consiste à orienter les coins d'abord, comme expliqué dans la méthode intermédiaire, puis d'utiliser une PLL pour terminer le cube. Cette solution a deux avanatges : le repérage est plus facile, mais le nombre d'algorithmes à apprendre est très réduit. En effet, 7 algorithmes sont nécessaires pour orienter les coins, puis 21 pour finir le cube, ce qui donne 28 !</p>
+                <a class="back-top" href="#top">Haut de page</a>
                 <!-- Fin sujet -->
                 <img
                     alt="cube 3x3"
