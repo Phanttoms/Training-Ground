@@ -95,13 +95,185 @@
                 <!-- Debut sujet -->
                 <h2>Résoudre le Rubik's cube 3x3 avec la méthode d'Ofapel</h2>
                 <p>Je ne vous cache pas que, malgré le fait que cette méthode soit faite pour les gros cubes, j'ai eu envie de l'adapter au 3x3x3. Elle ne comporte que 4 étapes et bien qu'elle s'apparente aux corners first, elle permet d'atteindre les 40 secondes sans trop d'entrainement. On y va?</p>
+                <h5>Pour résoudre le cube avec la méthode Ofapel, vous passerez par les étapes suivantes :</h5>
+                <div class="boxnav-3x3">                <!-- Nav box -->
+                    <nav class="nav-3x3">               <!-- Nav barre -->
+                        <ul>
+                            <li><a class="nav-link" href="#one-o3x3">La première face</a></li>
+                            <li><a class="nav-link" href="#two-o3x3">Les coins de la face du haut</a></li>
+                            <li><a class="nav-link" href="#three-o3x3">Les arêtes de la face du haut</a></li>
+                            <li><a class="nav-link" href="#four-o3x3">Terminer le cube</a></li>
+                            <li><a class="nav-link" href="#five-o3x3">Les arêtes de la face du haut (alternative)</a></li>
+                            <li><a class="nav-link" href="#six-o3x3">Améliorer l'Ofapel sur le 3x3x3</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
+                <!-- Etape 1 -->
+                <span class="height-link" id="one-o3x3"></span>
+                <h3>1. La première face</h3>
+                <p>Pour commencer, il vous faudra choisir une couleur. Ca parait bête mais c'est pourtant une étape indispensable et très utile. Essayez de garder la même couleur pour chaque résolution. Pour des raisons de visibilité, je choisis toujours la jaune et préconise aussi la blanche mais bien sûr, libre à vous de choisir celle que vous préférez parmi les 6. Notez qu'il se peut que les applets ne correspondent pas. Passez alors sur la page de configuration accessible dans le menu sur la page d'accueil.</p>
+                <p>Après avoir essayé plusieurs positions, j'ai opté pour une résolution de la première face en bas. Cela nous permettra par la suite d'avoir le cube dans le bon sens.</p>
+                <p>Premièrement, placez le centre de la couleur choisie en bas et repérez les cubes arêtes de la même couleur. Il faut à partir de là reconstituer une croix sur la face du bas. Attention de faire correspondre les cubes arêtes avec les cubes centres des faces latérales. Cette étape étant assez intuitive, je vous laisse découvrir par vous même comment y arriver en un minimum de coups.</p>
+                <p>Là, commencent les choses intéressantes. Il faut maintenant placer les cubes coins mais plusieurs propositions s'offrent à nous. N'oubliez pas que vous pouvez toujours effectuer des mouvements simples (la plupart du temps de la couche supérieure) pour vous retrouver dans un des cas suivants:</p>
+                <h5>-Le cube coin est sur la tranche du haut, le jaune sur la couronne:</h5>
+                <div class="box-code">
+                    <code>RUR'</code>
+                    <code>L'U'L</code>
+                </div>
+                <h5>-Le cube coin est sur la tranche du haut, le jaune sur la face du haut:</h5>
+                <div class="box-code">
+                    <code>RU2R'U'RUR'</code>
+                    <code>L'U2'LUL'U'L</code>
+                </div>
+                <h5>-Le cube coin est sur la tranche du bas:</h5>
+                <div class="box-code">
+                    <code>RUR'U'RUR'</code>
+                    <code>L'U'LUL'U'L</code>
+                </div>
+                <p>Je vous conseille de commencer par les formules où; le cube coin est en haut. Cela peut permettre de déloger un cube coin placé sur la tranche du bas.</p>
+                <p>Puisque votre première face est reconstituée, je vous propose de passer aux coins de la face du haut.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 2 -->
+                <span class="height-link" id="two-o3x3"></span>
+                <h3>2. Les coins de la face du haut</h3>
+                <p>Cette étape va se passer en 2 temps. D'abord, il faut placer les coins et ensuite les orienter.</p>
+                <h5>Placer</h5>
+                <p>Les coins vont se placer 2 par 2. Repérez 2 coins bien placés. Sur l'applet de gauche, ils sont à gauche et sur l'applet de droite, ils sont a droite. Maintenant que vous les avez repérés, on peut remarquer que, si les cubes à placer sont à gauche, la formule s'exécute en commençant à droite et vice versa.</p>
+                <div class="box-code">
+                    <code>L'URU'LUR'U2</code>
+                    <code>RU'L'UR'U'LU2</code>
+                </div>
+                <p>Mais il se peut qu'aucun cube ne soit à sa place. Pour cela, il faudra exécuter l'algorithme 2 fois. Cependant, il est préférable de retirer le demi tour de la tranche supérieur à la fin de chaque formule.</p>
+                <p>Cela donne ceci:</p>
+                <div class="box-code">
+                    <code>L'URU'LUR'L'URU'LUR'</code>
+                </div>
+                <h5>Orienter</h5>
+                <p>Cette étape peut paraitre compliquée à cause de son nombre de cas mais en réalité elle ne se résoud qu'avec une seule formule, exécutée une fois, 2 fois, 3 fois ou avec sa symétrie. Cette formule agit sur 3 coins.</p>
+                <h5>exécutée une fois:</h5>
+                <div class="box-code">
+                    <code>L'U2'LUL'UL</code>
+                    <code>RU2R'U'RU'R'</code>
+                </div>
+                <h5>exécutée deux fois:</h5>
+                <div class="box-code">
+                    <code>RU2R'U'RUR'U'RU'R'</code>
+                    <code>RU2R'U'RU'R'U'RU2R'U'RU'R'</code>
+                </div>
+                <h5>exécutée trois fois:</h5>
+                <div class="box-code">
+                    <code>RU2R'U'RUR'U'RUR'U'RU'R'</code>
+                </div>
+                <h5>exécutée avec la symétrie:</h5>
+                <div class="box-code">
+                    <code>RU2R'U'RU'R'L'U2'LUL'UL</code>
+                    <code>L'U2'LUL'ULRU2R'U'RU'R'</code>
+                    <code>z' L'U2'LUL'ULRU2R'U'RU'R'z</code>
+                    <code>z RU2R'U'RU'R'L'U2'LUL'UL z'</code>
+                </div>
+                <p>Vous voyez! On y est arrivé. Passons donc à la troisième étape.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 3 -->
+                <span class="height-link" id="three-o3x3"></span>
+                <h3>3. Les arêtes de la face du haut</h3>
+                <p>De façon classique, nous allons procéder comme suit mais bien évidemment, il existe quelques formules pour améliorer cette étape. mais chaque chose en son temps. Le principe est de remonter chacune des arêtes de la 2eme couronne vers celle du haut.</p>
+                <p>Dans un premier temps, nous allons nous intéresser aux arêtes situées sur la 2eme couronne. Placez en une sous les coins de la même couleur et faites en sorte que l'on voit la couleur sur la face de devant. Dans les cas illustrés ci-dessous, l'arête blanc/bleu est sous les coins ayant du bleu et la facette bleu est visible. En fonction de l'emplacement de votre arête, effectuez l'une des 2formules proposées par les animations ci-dessous.</p>
+                <div class="box-code">
+                    <code>RU'R'U u'RUR'</code>
+                    <code>L'ULU'u L'U'L</code>
+                </div>
+                <p>Vous avez, bien entendu, la possibilité de faire l'inverse de ces séquences pour vous débloquer plus d'opportunités :</p>
+                <div class="box-code">
+                    <code>RU'R'U' uRUR'</code>
+                    <code>L'ULUu' L'U'L</code>
+                </div>
+                <p>Il se peut que vous ayez une ou plusieurs arête(s) sur la face du haut. Si vous êtes dans ce cas là, essayez de voir s'il n'est pas possible de descendre cette arête en même temps que vous en mettez en place une autre. Si ce n'est pas possible, remplacez la par n'importe quelle arête. Elle sera alors sur la 2eme couronne. Ensuite,vous savez comment faire.</p>
+                <div class="box-code">
+                    <code>RU'R'U u'RUR'</code>
+                </div>
+                <p>Comme convenu, je vous livre <a class="nav-link" href="#five-o3x3">les formules pour améliorer cette étape</a></p>
+                <p>Vous voyez! On y est arrivé. Passons donc à la quatrième étape.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 4 -->
+                <span class="height-link" id="four-o3x3"></span>
+                <h3>4. Terminer le cube</h3>
+                <p>Bon allez!! On ne se démotive pas. On arrive au bout de nos peines. Dernière étape: remettre la 2eme couronne en ordre. Juste un petit truc. On va juste pivoter le cube pour que la 2eme couronne devienne la couronne verticale du milieu. Pas de panique, il n'y a pas beaucoup de formules et elles ne sont pas très compliquées. Il faut juste comprendre comment elles fonctionnent et voir sur quelles pièces elles agissent. Il va aussi falloir que vous soyez imaginatif. Ne vous limitez pas à ce que vous voyez mais essayez de combiner les formules.</p>
+                <p>Voici la première formule. Je vous livre en prime la symétrie qui est très optionnelle mais peut être utile pour éviter les reprises de cubes.</p>
+                <div class="box-code">
+                    <code>B'U'R'UM'U'RUMB</code>
+                    <code>B U L U' M' U L' U' M B'</code>
+                </div>
+                <p>La suivante et sa symétrie font parties de celles qui gardent l'orientation des arêtes.</p>
+                <div class="box-code">
+                    <code>M'U2MU2</code>
+                    <code>MU2M'U2</code>
+                </div>
+                <p>Là, on va uniquement orienter les arêtes.</p>
+                <div class="box-code">
+                    <code>(MU)2MU2(M'U)2M'U2</code>
+                    <code>(M'U)MUMU2(M'U)2M'U2M2</code>
+                </div>
+                <p>Il ne reste plus que quelques cas très marginaux mais parfois utiles. Si on se débrouille bien, on n'en a pas besoin.</p>
+                <div class="box-code">
+                    <code>M2U2M2U2</code>
+                    <code>E2ME2M'</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 5 -->
+                <span class="height-link" id="five-o3x3"></span>
+                <h3>Les arêtes de la face du haut (alternative)</h3>
+                <p>Cette section vise à améliorer l'étape 3 du 3x3x3. Cependant, les formules présentées ici servent aussi à placer les arêtes centrales du 5x5x5 sur la dernière couronne. Pour cela, considérez les 2 tranches externes du 5x5x5 comme une seule tranche. Votre 5x5x5 se transforme en 3x3x3.</p>
+                <p>Pour en revenir au 3x3x3...Avant d'effectuer les formules que vous connaissez déjà, il serait judicieux de vérifier la position des arêtes et de temps en temps, nous sommes dans un des cas suivants (voir même dans plusieurs). Parfois il suffit de mettre en place une arête (tel qu'on l'a vu dans l'étape 3) pour se retrouver dans l'un des cas suivants. J'avoue que c'est pas très clair. Pour faire simple, essayez de vous retrouver au maximum dans une des configurations suivantes. Vous placerez alors plusieurs arêtes à la fois.</p>
+                <p>Stop au blabla ! Place aux images ! J'ai cependant tendance à laisser cette étape pour la résoudre à la fin du cube.</p>
+                <div class="box-code">
+                    <code>rUR'U'MURU'R'</code>
+                    <code>RUR'U'M'URU'r'</code>
+                    <code>M'UMU2M'UM</code>
+                    <code>M'UMU2M'UM</code>
+                    <code>M'UM'UM'UM'U2MUMUMUM</code>
+                    <code>(M'U)4(MU)4</code>
+                </div>
+                <p>Chaque formule a sa symétrie mais elle n'est pas forcément utile. Je vous laisse le soin de les trouver vous même.</p>
+                <p>Retour vers la <a class="nav-link" href="#four-o3x3">quatrième étape.</a></p>
+                <a class="back-top" href="#top">Haut de page</a>
 
-                
+                <!-- Etape 6 -->
+                <span class="height-link" id="six-o3x3"></span>
+                <h3>Améliorer la méthode d'Ofapel sur le 3x3x3</h3>
+                <p>Conscient que la méthode est perfectible, je me suis donc penché sur les points que l'on peut modifier afin de l'améliorer. Encore une fois, je ne pense pas qu'elle soit réellement faite pour le speedcubing mais ce qui suit pourra vous amener vers des méthodes ayant fait leurs preuves et vous forcera à voir votre cube différemment.</p>
+                <h5>1. CELL</h5>
+                <p>Tout d'abord, nous pouvons voir que l'étape des coins est assez longue et utilise des formules répétées plusieurs fois. Il est évident que nous pouvons trouver plus court mais nous allons nous diriger vers une étape beaucoup plus technique.</p>
+                <p>Les CELL vont nous permettre de placer et d'orienter les coins en une étape. Vous comprendrez donc que les cas possibles sont d'autant plus nombreux que le repérage est difficile. Mon conseil sera d'apprendre progressivement ces formules afin d'éviter les confusions. Les cas encore non connus pourront toujours être résolus avec votre méthode actuelle. Les connaisseurs se demanderont pourquoi ne pas utiliser les COLL "classiques". La méthode d'Ofapel place les coins avant les arêtes de la 2eme et 3eme couronne. Profitons alors de cette caractéristique pour trouver des séquences plus courtes. Les CELL sont donc des COLL laissant la tranche E libre.</p>
+                <h5>2. Etapes des arêtes</h5>
+                <p>Plus on connaît de méthodes, plus on sait réagir vite. Effectivement, il est bien pratique de connaître les derniers algos de Petrus pour l'étape des arêtes. Ce sont les PLL H, Z, U et Usym. Une fois de temps en temps (très rare) on tombe dessus. Mais dans des cas plus fréquents, on peut forcer ce genre de situation. Imaginons qu'il n'y a qu'une seule arête sur la deuxième couronne mais elle ne sera pas au bon endroit si on la rentre telle quelle. De temps en temps, il est plus efficace de la rentrer et d'effectuer une PLL que de déplacer toutes les arêtes. Voilà l'explication en image. A gauche, avec l'astuce que je vous donne et à droite, avec la méthode classique.</p>
+                <div class="box-code">
+                    <code>L'ULU' uL'U'LU'R2URU(R'U')2R'UR'U</code>
+                    <code>U'L'ULU' uL'U'Ly2 UL'ULU' uL'U'L y2 L'ULU'uL'U'L</code>
+                </div>
+                <p>Mais les PLL ne sont pas les seules à être utile. En voici des exemples.</p>
+                <div class="box-code">
+                    <code>(ER)4</code>
+                    <code>R2' U2 R2' U2' R2 U2'</code>
+                </div>
+                <p>Et si vous vous sentez d'humeur à apprendre les 29 EOLL, vous pouvez aussi les appliquer ici. En voici 2 que j'apprécie tout particulièrement.</p>
+                <div class="box-code">
+                    <code>(MUM'U)2MUM'U'</code>
+                    <code>Rr'URUR'U'r2R2'URU'r'U'</code>
+                </div>
+                <h5>3. Dernière étape</h5>
+                <p>Je vous livre en prime quelques algos qui combinent des formules déjà existantes dans la méthode. Cela permet de réagir plus vite. J'en rajouterai sûrement au fur et à mesure de mes expériences.</p>
+                <div class="box-code">
+                    <code>lL'Dr'RD'r'RD2'R'rD'R'rD'R'r</code>
+                    <code>R'rD'r'RD'r'RD2'R'rD'R'rD'r'RD'2</code>
+                    <code>R'rD2'r'2R2D'r'RD'r'RD2'R'rD'R'rD'R'r</code>
+                    <code>R'B2'Rr'RD'r'RD'r'RD2'R'rD'R'rD'R'rD2'R'B2'R</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
                 <!-- Fin sujet -->
                 <img
                     alt="cube 3x3"
