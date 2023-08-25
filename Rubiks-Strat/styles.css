@@ -324,7 +324,7 @@ code {
 }
 
 /*-*/
-/* Main 3x3x3 */
+/* nav link retour top */
 
 .back-top {
     text-decoration: none;
@@ -338,7 +338,6 @@ code {
 }
 
 /*-*/
-
 /*-------------------------------------------------------------*/
 /* Img du doc */
 /* Img 2x2 */
@@ -349,6 +348,27 @@ code {
     background-color: yellow;
     align-self: center;
     margin-top: 2%
+}
+
+/*-*/
+/* Img aveugle 3x3 */
+
+.img-aveugle3x3 {
+    width: 40%;
+    height: auto;
+    background-color: red;
+    
+}
+
+/*-*/
+/* Box img doc */
+
+.boximg-3x3 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
 }
 
 /*-*/
