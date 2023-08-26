@@ -90,7 +90,7 @@
                 <img
                     alt="cube 3x3"
                     class="img-cube"
-                    src="azerty"
+                    src="https://www.lesimprimantes3d.fr/wp-content/uploads/2015/04/rubiks-cube-3dprinted.jpg"
                 >
                 <!-- Debut sujet -->
                 <h2>Le blindfold, une méthode rapide par deadalnix</h2>
@@ -110,14 +110,226 @@
                         </ul>
                     </nav>
                 </div>
+                
+                <!-- Etape 1 -->
+                <span class="height-link" id="one-ar3x3"></span>
+                <h3>Speedblind : étape 1, Orienter les coins.</h3>
+                <p>Ceci se fait en deux séquences : l'un pour orienter la face du haut, et l'autre la face du bas. Il est parfois nécessaire d'ajouter un coin de la face du bas dans la première orientation. Les coins pouvant nécessiter de s'orienter par 3 il y aura parfois des cas ou le coin de la face du bas ne pourra pas s'orienter.</p>
+                <h5>1 Coin :</h5>
+                <p>Voici l'algo de base. Il s'agit du double sune, mais passé sur le coté, ainsi, il est possible de retourner deux coins sur n'importe quelle face sans regrip. Ce cas est très particulier car il est en fait souvent plus judicieux de retourner le cube et de tout orienter un algo.</p>
+                <div class="box-code">
+                    <code>R'U'R'UR'U'R2'UR2'URU'RUR2U'R'</code>
+                    <code>RU'R2'URU'RUR2'UR2U'R'UR'U'R</code>
+                </div>
+                <h5>2 Coins :</h5>
+                <div class="box-code">
+                    <code>R2U'R'UR'U'R2'UR2'URU'RUR2U'</code>
+                    <code>U'R2'URU'RUR2'UR2U'R'UR'U'R2</code>
+                    <code>R2z'RURU'R'URURUR'U'RURU2'R'z</code>
+                    <code>z'RU2'R'U'R'URU'R'U'R'U'RUR'U'R'zR2</code>
+                </div>
+                <h5>3 Coins :</h5>
+                <div class="box-code">
+                    <code>RURU'R'URURUR'U'RURU2'R'U2</code>
+                    <code>U2'RU2'R'U'R'URU'R'U'R'U'RUR'U'R'</code>
+                    <code>RUR'U'RUR'U2R'U'R'U'RURUR</code>
+                    <code>R'U'RUR'U'RU2'RURUR'U'R'U'R'</code>
+                    <code>R'U'R'U'R'URURU2'RU'R'URU'R'</code>
+                    <code>RURURU'R'U'R'U2R'URU'R'UR</code>
+                    <code>l'URU'R'UR2'URURU'R'U'R'U2x'</code>
+                    <code>lU'R'URU'R2U'R'U'R'URURU2'x</code>
+                </div>
+                <h5>4 Coins :</h5>
+                <div class="box-code">
+                    <code>RUR'URU'R'UR2URURU'R'U'R'UR'</code>
+                    <code>U'RUR'UR'U'RURU'R'U'R'URURU'R'</code>
+                    <code>z(RU'R'UR2U'R2'U)2z'</code>
+                    <code>z(R'URU'R2'UR2U')2z'</code>
+                    <code>z(RU'R2'UR2U'R'U)2z'</code>
+                    <code>z(R'UR2U'R2'URU')2z'</code>
+                </div>
+                <h5>Extras :</h5>
+                <div class="box-code">
+                    <code>(R'U'RUR'U)3</code>
+                    <code>(RUR'U'RU')3</code>
+                    <code>(RURU'RU'RU'R2'U)2</code>
+                    <code>(R'U'R'UR'UR'UR2U')2</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 2 -->
+                <span class="height-link" id="two-ar3x3"></span>
+                <h3>Speedblind étape 2, placer les coins</h3>
+                <p>Ici, rien de bien nouveau par rapport a la méthode 3-cycle. Si ce n'est que nous allons voir comment résoudre tous les cycles de longueur 2 par paire. Nous verrons aussi comment résoudre les cycles de longueur 5. Nous allons ici être très exhaustif afin de minimiser les set-ups et la réflexion pendant la résolution et pendant la mémorisation.</p>
+                <h5>Cycles imbriqués</h5>
+                <p>L'imbrication de cycle est très simple. Elle permet de fusionner deux cycles en 1. De façon formelle, si on a un cycle ABCD et un autre EFGH, il va falloir transformer l'un des deux cycles en faisant en sorte que la première et dernière pièce soit la même. Ici, nous allons effectuer cette manipulation avec EFGH, qui va devenir EFGHE. Il est maintenant possible d'insérer ce nouveau cycle n'importe où dans le premier. Typiquement, cela va donner ABCDEFGHE, mais il est possible d'envisager AEFGHEBCD ou bien ABCEFGHED. Toutes ces séquences vont résoudre votre cube.</p>
+                <p>Un exemple concret : (1234)(5678). Nous allons former un cycle : 123456785 que nous allons résoudre en deux temps comme suit : 12345 puis 16785. Voici l'exemple en images :</p>
+                <div class="box-code">
+                    <code>U2DF'R'URU'FRU'RU'RUR'UR'UU2'D'z2U'U'RU'RU'R'UR'UR'F'UR'U'RFUz2</code>
+                </div>
+                <h5>Les 3-cycles :</h5>
+                <div class="box-code">
+                    <code>lU'RD2'R'URD2'R'l'</code>
+                    <code>l'UR'D2RU'R'D2Rl</code>
+                    <code>lRD2'R'U'RD2'R'Ul'</code>
+                    <code>l'R'D2RUR'D2RU'l</code>
+                    <code>x'R'U'RD2'R'URD2'x</code>
+                    <code>l'U'RD2'R'URD2'x'</code>
+                    <code>x'D2'R'U'RD2'R'URx</code>
+                    <code>xD2'R'U'RD2'R'Ul</code>
+                    <code>R'DRU2'RD'R'U2RDR2D'R</code>
+                    <code>RDRU2'RD'R'U2RDR2D'R'</code>
+                    <code>RU'R'D2R'URD2R'U'R2'UR'</code>
+                    <code>R'U'R'D2R'URD2R'U'R2'UR</code>
+                </div>
+                <h5>Les 2*2-cycles :</h5>
+                <p>Indispensables pour résoudre les cas de parité rapidement. Il y a ici peu de nouveaux algos par rapport a ceux que vous devriez connaitre arrivé à ce stade dans le cube.</p>
+                <h5>Les 5-cycles :</h5>
+                <p><strong>Classe 4/1 :</strong></p>
+                <p>C :</p>
+                <div class="box-code">
+                    <code>(M2'UM2'U2)2</code>
+                    <code>z'(M2'UM2'U2)2z</code>
+                    <code>R'FrM'UM2'U2M2'UM2'U2R'F'R</code>
+                    <code>lU'l'(M2'UM2'U2)2lUl'</code>
+                    <code>l'URD'R'U'RDR'U'RD'R'URDx'</code>
+                    <code>xUR'U'LURU'r'FRF'rUR'U'r'</code>
+                    <code>lU'R'U(RU'R'U)2x</code>
+                    <code>FU'R'U(RU'R'U)2RF'</code>
+                    <code>F'U'R'U(RU'R'U)2RF</code>
+                    <code>U'RU'R'UR'F2RU'RUR'UF2</code>
+                    <code>RF'(RUR'U')3FR'</code>
+                    <code>RF'D'FR'U2RF'DFR'U2</code>
+                    <code>R'FUF'RD2'R'FU'F'RD2'</code>
+                    <code>U'RU'RU'R'UR'UR'F'UR'U'RF</code>
+                    <code>F'R'URU'FRU'RU'RUR'UR'U</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 3 -->
+                <span class="height-link" id="three-ar3x3"></span>
+                <h3>Speedblind : étape 3, mémoriser les coins.</h3>
+                <p>Mémoriser les coins est la dernière chose que l'on fait pendant la mémorisation. Comme ceux ci peuvent être résolues en 4 algos, je vous conseille de simplement vous rappelez de ce que vous allez faire. C'est la première chose que vous allez résoudre. Je vous conseille cet ordre : mémorisation placement -> mémorisation orientation -> résolution orientation -> résolution placement.</p>
+                <a class="back-top" href="#top">Haut de page</a>
 
+                <!-- Etape 4 -->
+                <span class="height-link" id="four-ar3x3"></span>
+                <h3>Etape 4, Placer et Orienter les arêtes.</h3>
+                <p>L'objectif de la méthode M2 est de placer et d'orienter les arêtes une a une. Les set-ups sont limités à R et U ou bien à L et U, ce qui rend son exécution tres rapide. Il existe quelques cas particuliers, sur les slot de la tranche M, mais nous en parlerons plus tard. Une pièce nous intéresse : celle qui est dans le buffer. Le buffer est le slot situé en bas devant. Via le mouvement M2, nous allons amener cette pièce dans le slot en haut derrière, et vice versa. Résoudre une arête va donc consister en l'enchainement suivant : amener l'emplacement ou va se loger l'arête en UB, appliquer M2, puis faire notre set-up à l'envers. Les set-ups ne doivent pas modifier la tranche M.</p>
+                <h5>Les cas simples</h5>
+                <p>Les cas simples sont simples ! On amène le slot en UB, on applique M2, puis on applique notre set-up à l? envers. Nous ne nous occupons pas ici de la tranche M. Voici quelques cas. Ce qui est présenté ici, ne constitue pas la seule solution, et de plus n'est pas à apprendre, mais à comprendre !</p>
+                <p><strong>Slot RF - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>URU'M2'UR'U'</code>
+                </div>
+                <p><strong>Slot RF - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>x'U'R2'UM2'U'R2'Ux</code>
+                </div>
+                <p><strong>Slot RD - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>UR2U'M2'UR2U'</code>
+                </div>
+                <p><strong>Slot RD - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>x'U'R'UM2'U'RUx</code>
+                </div>
+                <p><strong>Slot RB - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>UR'U'M2'URU'</code>
+                </div>
+                <p><strong>Slot RB - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>x'RU'R'UM2'U'RUR'x</code>
+                </div>
+                <p><strong>Slot RU - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>R'URU'M2'UR'U'R</code>
+                </div>
+                <p><strong>Slot RU - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>x'U'RUM2'U'R'Ux</code>
+                </div>
+                <h5>Les slots UF et DB.</h5>
+                <p>L'application du mouvement M2 échange ces deux slots. Nous allons donc une fois sur deux, devoir résoudre l'un à la place de l'autre. Nous allons voir comment déjouer ce problème pendant la mémorisation. Voici comment résoudre les différents cas qui peuvent se présenter. Ici, on s'intéresse a ou est le slot dans lequel on veut placer l'arête, et non directement a l'arête qu'on a placé ! On remarque que dans les exemples, si l'arête à placer est la blanche/verte, mais que son slot est en UF, on va résoudre UF.</p>
+                <p><strong>Slot UF - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>U2M'U2M'</code>
+                </div>
+                <p><strong>Slot UF - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>DM'R'UR'U'Rr'URU'RD'M2'</code>
+                </div>
+                <p><strong>Slot DB - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>MU2MU2</code>
+                </div>
+                <p><strong>Slot DB - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>M2'DR'UR'U'M'URU'r'R2D'</code>
+                </div>
+                <h5>Le slot UB.</h5>
+                <p>Ce slot n'a pas grand chose de spécial sinon quelques astuces qui permettent de résoudre les arêtes plus rapidement. On notera qu'il n'y a plus de question à se poser comme pour les slots précédents.</p>
+                <p><strong>Slot UB - Arête bien orientée</strong></p>
+                <div class="box-code">
+                    <code>M2'</code>
+                </div>
+                <p><strong>Slot UB - Arête mal orientée</strong></p>
+                <div class="box-code">
+                    <code>F2M'U'M'U'M'U2'MU'MU'MU2'F2M2'</code>
+                </div>
+                <p>Dans le cas ou la piece est mal orientée, la résolution est longue. Heureusement, on a des astuces pour l'esquiver. C'est en fait très simple, il suffit de mettre la pièce dans le slot, mais mal orientée a l'aide de M2. Il faudra ensuite orienter les pièces mal orientées à la fin. Il est aussi possible de procéder de la même manière avec les slot UF et DB, ainsi qu'avec d'autres slots. Il est impossible d'avoir un nombre impair d'arêtes mal orientées, on peut donc déduire aisément à partir du nombre d'arête mal orientées connues si le buffer est bien ou mal orienté. 4 arête mal orientées est un bon score.</p>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 5 -->
+                <span class="height-link" id="five-ar3x3"></span>
+                <h3>Speedblind : étape 5, Mémoriser les arêtes.</h3>
+                <h5>Le cas général.</h5>
+                <p>Nous allons faire en sorte de n'avoir qu'un seul cycle en utilisant les insertions de cycle. Une fois le premier cycle terminé, nous savons qu'il va falloir exécuter deux fois la résolution du premier élément du second cycle, il est donc important de choisir quelques chose de facile. Je vous conseille donc de commencer votre second cycle avec la pièce dans l'emplacement UB, ainsi c'est un M2 que vous répéterez deux fois. Si cette pièce est déjà résolue, choisissez en une autre simple.</p>
+                <p>Afin d'être fluide pendant la résolution, nous allons mémoriser l'orientation et le placement en même temps. Il est pour cela efficace de mémoriser en pensant stickers. Au lieu de vous demander ou va telle pièce, demandez vous où va tel sticker de la pièce. Vous saurez ainsi non seulement ou va la pièce, mais aussi dans quel sens.</p>
+                <p>Dans tous les cas, je vous conseille de mémoriser ce que vous allez résoudre, et tout en un seul cycle.</p>
+                <h5>Les slots UF et DB.</h5>
+                <p>Les astuces concernant ces slots gagnent à être résolues pendant la mémorisation. La première chose à faire est de mémoriser les arêtes par deux. Si un slot UF ou DB se présente pendant la première, rien de spécial n'est à faire. Si cela se présente pendant la seconde, mémorisez UF a la place de DB et vice versa, MAIS regardez la pièce qui est dans le bon slot pour continuer votre cycle. Par exemple, si vous tombez sur UF en deuxième position dans un groupe de deux arêtes, mémoriser DB, mais regardez la pièce en UF pour continuer votre cycle.</p>
+                <h5>Les pièces mal orientées.</h5>
+                <p>Elles sont de deux natures : les pièces mal orientées mais déjà bien placées au début de la résolution et celle qu'on va désorienter volontairement pour aller plus vite. Il est conseillé d'amener le nombre total à 4. Il n'y a rien de particulier à faire pour les premières, nous allons nous en occuper a la fin de la résolution.</p>
+                <p>En revanche, il est nécessaire de prévoir les arêtes qu'on va mal orienter volontairement. Cela est très simple : on va mémoriser les mauvaises informations, et considérer le mauvais stickers sur l'arête suivante pour continuer. Si vous ne le faites pas, toutes les arêtes suivantes vont être désorientées.</p>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 6 -->
+                <span class="height-link" id="six-ar3x3"></span>
+                <h3>Etape 6, Résoudre les problèmes de parité.</h3>
+                <p>Si vous avez un problème de parité, les arêtes de la tranche M ne vont pas être bonnes a la fin de votre résolution en M2. Ca n'est pas grave, vous n'avez pas a vous en occuper car elles sont toujours positionnées de la même manière. A la fin de la résolution des arêtes, s?il y a un problème de parité, effectuez un M2. Il va donc simplement falloir se limiter aux coins. A l'aide des mouvements R2 et L2, vous pourrez toujours vous ramener aux cas suivants :</p>
+                <div class="box-code">
+                    <code>y'R'UR'U'R'FR2U'R'U'RUR'F'R2y</code>
+                    <code>U'r2'URU2'RDR'URD'R'U'R'URUR'r2'U</code>
+                    <code>DR2'UR'U2RU2'R'FRUR'U'R'F'R2U2'R2D'</code>
+                    <code>yUR'U2'RDR'URD'R'U'R'URUR'UR2U'y'</code>
+                    <code>yU'RU2'RU2'R'FRUR'U'R'F'R2U'R2'Uy'</code>
+                    <code>y'U'R2U2'FRU'R'U'RUR'F'RUR'U'R'FRF'U2'R2'Uy</code>
+                    <code>y'UR2U'FRU'R'U'RUR'F'RUR'U'R'FRF'UR2U'y</code>
+                    <code>U'r2'UR'U2RUR'zR2'UR'DRU'R'z'r2'U</code>
+                    <code>DR2'URUR'F'RUR'U'R'FR2U'R'U2R2D'</code>
+                    <code>rD'R2U'R'U2RUR'zR2'UR'DRU'Rz'R2'Dr'</code>
+                    <code>R'FU2xU2'RUR'F'RUR'U'R'FR2U'R'Ux'U2F'R</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
+
+                <!-- Etape 7 -->
+                <span class="height-link" id="seven-ar3x3"></span>
+                <h3>Speedblind : étape 7, Orienter les arêtes restantes.</h3>
+                <p>Cette étape consiste simplement à orienter les arêtes restantes. Ici rien de compliqué, je vous propose quelques algos pour vous en sortir.</p>
+                <div class="box-code">
+                    <code>(M'U')4</code>
+                    <code>FRF'(M'U')4Fl'U'x'</code>
+                    <code>(M'U')4(MU')4</code>
+                    <code>M'U'M'U'M'U2MU'MU'MU2</code>
+                </div>
+                <a class="back-top" href="#top">Haut de page</a>
                 <!-- Fin sujet -->
                 <img
                     alt="cube 3x3"
                     class="img-cube"
-                    src="azerty"                
+                    src="https://twistypuzzles.com/museum/large/07883-01.jpg"                
                 >
             </article>
         </section>
