@@ -26,6 +26,10 @@
     /*-------*/
     /* Doc */
     --fifth-color-one: rgb(247, 247, 247);
+    /* box (big lil) */
+    --sixth-color-one: rgb(20, 29, 110);
+    --sixth-color-two: rgb(255, 255, 255);
+    --sixth-color-three: rgb(192, 187, 187);
 }
 
 /* Base */
@@ -277,6 +281,34 @@ h5 {
     padding-left: 35px;
 }
 
+/* box (accueil) */
+
+.big-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lil-box {
+    width: 45%;
+    height: auto;
+    background: linear-gradient(
+        var(--sixth-color-two),
+        var(--sixth-color-three)
+    );
+    border: solid 3px var(--sixth-color-one);
+    margin: 2.5%;
+    border-radius: 5% 5% 5% 5%;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    border-end-end-radius: 12px;
+    border-end-start-radius: 12px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
 /*code*/
 code {
     display: block;
@@ -360,6 +392,13 @@ code {
     
 }
 
+/*-*/
+/* Img lilbox */
+.img-lilbox {
+    width: 20%;
+    height: auto;
+    align-self: center;
+}
 /*-*/
 /* Box img doc */
 
