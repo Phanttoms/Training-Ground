@@ -12,13 +12,19 @@ Training Ground
         <li>Aide</li>
             <ol>
                 <li>Accueil</li>
-                <li>(en cours)</li>
+                <li>Forum</li>
             </ol>
         <li>Les classiques</li>
             <ol>
                 <li>2x2x2</li>
                 <li>3x3x3</li>
             </ol>
-        <li>(en cours)</li>
-        <li>(en cours)</li>
+        <li>Les originaux</li>
+            <ol>
+                <li>Rubik's Domino</li>
+            </ol>
+        <li>Autour du cube</li>
+            <ol>
+                <li>Notation</li>
+            </ol>
     </ol>
