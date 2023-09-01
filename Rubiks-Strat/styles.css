@@ -265,6 +265,11 @@ h5 {
     margin: 1%;
 }
 
+/*span de couleur*/
+.red {
+    color: red;
+}
+
 /*espace au dessus d'un h3 ciblé*/
 .espace {
     margin-top: 40px;
