@@ -419,3 +419,51 @@ function digitize(n) {
 digitize(35231)
 
 */
+/*
+// Make a simple function called greet that returns the most-famous "hello world!".
+// Style Points
+// Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+
+
+function greet() {
+    const hache = "h";
+    const eel = "e";
+    const hell = "l";
+    const haut = "o";
+    const wow = "w";
+    const rrr = "r";
+    const deer = "d";
+    const espace = " ";
+    const oh = "!"
+    const yolo = [];
+ 
+    for (let i = 0; i <= 69; i++) {
+      if (i <= 0) {
+        yolo.push(hache);
+      } else if (i <= 1) {
+        yolo.push(eel);
+      } else if (i <= 3) {
+        yolo.push(hell);
+      } else if (i <= 4) {
+        yolo.push(haut);
+      } else if (i <= 5) {
+        yolo.push(espace);
+      } else if (i <= 6) {
+        yolo.push(wow);
+      } else if (i <= 7) {
+        yolo.push(haut);
+      } else if (i <= 8) {
+        yolo.push(rrr);
+      } else if (i <= 9) {
+        yolo.push(hell);
+      } else if (i <= 10) {
+        yolo.push(deer);
+      } else if (i <= 11) {
+        yolo.push(oh);
+      }
+    } console.log(yolo.join(""))
+  }
+
+  greet()
+
+*/
