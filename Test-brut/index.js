@@ -467,3 +467,70 @@ function greet() {
   greet()
 
 */
+/*
+// Find the average of an ARRAY
+
+function findAverage(array) {
+    let num = 0;
+    
+    for (const element of array) {
+        num += element;
+    }
+    
+    if (num === 0) {
+        console.log(0);
+    } else {
+        console.log(num / array.length);
+    }
+}
+
+
+findAverage([1, 2, 3, 4]);
+
+*/
+/*
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+// Return True if you're better, else False!
+
+function betterThanAverage(classPoints, yourPoints) {
+    let allclass = 0;
+    let mclass = 0;
+    
+    for (const element of classPoints) {
+        allclass += element;
+    }
+
+    if (classPoints.length !== 0) {
+        mclass = allclass / classPoints.length;
+    }
+
+    if (mclass < yourPoints) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+
+
+    
+    console.log(mclass);
+}
+
+betterThanAverage([2, 3], 5)
+
+*/
+/*
+// Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+function sum (numbers) {
+    let result = 0;
+
+    for (const element of numbers) {
+        result += element
+    }
+    
+    console.log(result);
+};
+
+sum([1, 5.2, 4, 0, -1])
+
+*/
