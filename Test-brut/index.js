@@ -1,25 +1,4 @@
 /*
-const a = 3;
-const b = 6;
-const isMajeur = undefined;
-const notes = [6, 12, 14, 50, "yolo", [1, 2, 3]];
-
-//----------------
-*/
-/*
-
-let a = "salut";
-let b = a;
-
-console.log("yolo les noobs")
-
-if (true) {
-    console.log("wesh")
-}
-
-//--------------------
-*/
-/*
 
 const year = 2023;
 const birthyear = prompt('Quel est votre année de naissance ?');
@@ -109,36 +88,6 @@ while(true) {
 console.log('Bravo ! vous avez deviné')
 
 //---------------------------------------
-*/
-/*
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * (max + 1));
-}
-
-const solution = getRandomInt(10);
-console.log(solution);
-
-function isRight(n) {
-    return solution === n;
-}
-
-function guess() {
-    const number = prompt("Entrez un chiffre") * 1;
-    return isRight(number);
-}
-
-for (i = 0; i < 3; i++) {
-    if (guess()) {
-        console.log("GG");
-        break;
-    } else if (i === 2) {
-        console.log("noob");
-    }
-}
-
-//-------------------------------------------
-*/
 /*
 
 function isPremier(n) {
@@ -532,5 +481,27 @@ function sum (numbers) {
 };
 
 sum([1, 5.2, 4, 0, -1])
+
+*/
+/*
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+function invert(array) {
+    let result = [];
+
+    for (const element of array) {
+        if (element > 0) {
+            result.push(-element)
+        } else {
+            result.push(Math.abs(element))
+        }
+        
+    } 
+    console.log(result);
+}
+
+invert([1,2,3,4,5])
+invert([])
+invert([-1, -72, 69, -32])
 
 */
