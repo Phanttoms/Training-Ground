@@ -505,3 +505,33 @@ invert([])
 invert([-1, -72, 69, -32])
 
 */
+/*
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+// If the input is an empty array or is null, return an empty array.
+
+function countPositivesSumNegatives(input) {
+    if (input === null || input.length === 0) {
+      console.log([]);
+    }
+  
+    let pos = [];
+    let neg = 0;
+
+    for (const element of input) {
+      
+      if (element > 0) {
+        pos.push(element);
+      } else if (element < 0) {
+        neg += element;
+      }
+    }
+
+      console.log([pos.length, neg]);
+
+}
+
+countPositivesSumNegatives([])
+countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
+countPositivesSumNegatives([0, 0])
+
+*/
