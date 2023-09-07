@@ -535,3 +535,86 @@ countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -
 countPositivesSumNegatives([0, 0])
 
 */
+/*
+// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+// Array can contain numbers or strings. X can be either.
+// Return true if the array contains the value, false if not.
+
+function check(a, x) {
+    console.log(a.includes(x));
+}
+
+check([66, 101], 66)
+
+*/
+/*
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+function fakeBin(x){
+    let result = [];
+    
+    for (const element of x) {
+        if (element < 5) {
+            result.push(0);
+        } else {
+            result.push(1);
+        }
+    }
+    console.log(result.join(""));
+}
+
+fakeBin('45385593107843568') // '01011110001100111'
+
+*/
+/*
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+// if bmi <= 18.5 return "Underweight"
+// if bmi <= 25.0 return "Normal"
+// if bmi <= 30.0 return "Overweight"
+// if bmi > 30 return "Obese"
+
+function bmi(weight, height) {
+    const b = weight / (height * height);
+
+    if (b <= 18.5) {
+        console.log("Underweight");
+    } else if (b <= 25) {
+        console.log("Normal");
+    } else if (b <= 30) {
+        console.log("Overweight");
+    } else {
+        console.log("Obese");
+    }
+}
+
+bmi(80, 1.80)
+
+*/
+/*
+// Given a non-empty array of integers, return the result of multiplying the values together in order.
+
+function grow(x){
+    const sum = x.reduce((a, c) => a * c);
+
+    console.log(sum)
+
+}
+
+grow([1, 2, 3])
+
+*/
+/*
+// Build a function that returns an array of integers from n to 1 where n>0.
+
+const reverseSeq = n => {
+    let ar = [];
+    
+    for (let i = n; i >= 1; i--) {
+        ar.push(i);
+    }
+    console.log(ar);
+}
+
+reverseSeq(5)
+
+*/
