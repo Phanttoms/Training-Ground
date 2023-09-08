@@ -618,3 +618,66 @@ const reverseSeq = n => {
 reverseSeq(5)
 
 */
+/*
+// Create a function with two arguments that will return an array of the first n multiples of x.
+
+function countBy(x, n) {
+    let z = [];
+    let num = 0;
+    
+
+    for (let i = 0; i < n; i++) {
+        num += x;
+        z.push(num);
+    }
+
+  
+    console.log(z);
+}
+
+countBy(2,5)
+
+*/
+/*
+// Given a non-negative integer, 3 for example, return a string with a murmur.
+
+
+const countSheep = function (num){
+    let sheeps = [];
+    for (let i = 1; i <= num; i++) {
+      sheeps.push(`${i} sheep...`);
+    }
+    console.log(sheeps.join(""));
+}
+
+countSheep(3);
+
+*/
+/*
+// Let's play! You have to return which player won! In case of a draw return Draw!.
+
+function rps(p1, p2) {
+    const s = "scissors";
+    const r = "rock";
+    const p = "paper";
+
+    switch (p1 + p2) {
+        case p + p :
+        case r + r : 
+        case s + s : console.log("Draw!");
+        break;
+        case s + p :
+        case p + r :
+        case r + s : console.log("Player 1 won!");
+        break;
+        case p + s :
+        case r + p :
+        case s + r : console.log("Player 2 won!");
+        break;
+    }
+
+}
+
+rps('paper', 'paper')
+
+*/
