@@ -374,3 +374,47 @@ points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
 //points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"])
 
 */
+/*
+// Return the average of the given array rounded down to its nearest integer.
+
+function getAverage(marks){
+    //TODO : calculate the downward rounded average of the marks array
+    let result = 0;
+    
+    for (let i = 0; i < marks.length; i++) {
+        result += marks[i] / marks.length;
+    }
+    console.log(Math.floor(result));
+}
+
+getAverage([2,2,2,2])
+
+*/
+/*
+// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+// If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
+
+function sumArray(array) {
+    if (array === null || array === undefined || array.length <= 1) {
+        console.log(0);
+        return
+    }
+    
+    let all = 0;
+    let mmi = Math.min(...array);
+    let mma = Math.max(...array); 
+
+    for (let i = 0; i < array.length; i++) {
+        all += array[i];
+    }
+    
+    console.log(all - (mmi + mma));
+}
+
+sumArray(null)
+sumArray([ ])
+sumArray([ 3 ])
+sumArray([ 3, 5 ])
+sumArray([ 6, 2, 1, 8, 10 ])
+
+*/
