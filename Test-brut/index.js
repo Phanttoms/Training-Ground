@@ -411,11 +411,11 @@ function sumArray(array) {
     console.log(all - (mmi + mma));
 }
 
-sumArray(null)
-sumArray([ ])
-sumArray([ 3 ])
-sumArray([ 3, 5 ])
-sumArray([ 6, 2, 1, 8, 10 ])
+//sumArray(null)
+//sumArray([ ])
+//sumArray([ 3 ])
+//sumArray([ 3, 5 ])
+//sumArray([ 6, 2, 1, 8, 10 ])
 
 */
 /*
@@ -449,5 +449,19 @@ getGrade(100,85,96) // A
 getGrade(66,62,68) // D
 
 */
+/*
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
 
+function monkeyCount(n) {
+    let ar = [];
+    
+    for (let i = 1; i <= n; i++) {
+      ar.push(i);
+    }
+    console.log(ar);
+}
 
+monkeyCount(5)
+
+*/
