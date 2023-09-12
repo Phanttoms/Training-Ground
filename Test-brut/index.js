@@ -418,3 +418,36 @@ sumArray([ 3, 5 ])
 sumArray([ 6, 2, 1, 8, 10 ])
 
 */
+/*
+// Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
+
+function getGrade (s1, s2, s3) {
+    let average = (s1 + s2 + s3) / 3;
+    
+    if (average < 60 || average === 0) {
+        console.log("F");
+        return "F";
+    } else if (average < 70 || average === 60) {
+        console.log("D");
+        return "D";
+    } else if (average < 80 || average === 70) {
+        console.log("C");
+        return "C";
+    } else if (average < 90 || average === 80) {
+        console.log("B");
+        return "B";
+    } else if (average <= 100 || average === 90) {
+        console.log("A");
+        return "A";
+    }
+    
+
+}
+
+getGrade(95,90,93) // A
+getGrade(100,85,96) // A
+getGrade(66,62,68) // D
+
+*/
+
+
