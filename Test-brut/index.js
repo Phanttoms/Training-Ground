@@ -15,30 +15,6 @@ console.log(checkOrder("aabbcc"));
 
 */
 /*
-// Créez une fonction pour multiplier toutes les valeurs d’un tableau par la longueur du tableau donné.
-
-function mulByLen(tab) {
-	return tab.map(i => i * tab.length);
-}
-
-// Afficher la sortie
-console.log(mulByLen([1, 1, 1]));
-console.log(mulByLen([1, 2, 3]));
-console.log(mulByLen([0, 0, 0, 0, 2]));
-
-*/
-/*
-// Convert number to reversed array of digits
-
-function digitize(n) {
-    const digits = String(n).split("").reverse().map(Number)
-    console.log(digits)
-}
-
-digitize(35231)
-
-*/
-/*
 // Make a simple function called greet that returns the most-famous "hello world!".
 // Style Points
 // Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
@@ -87,70 +63,6 @@ function greet() {
 
 */
 /*
-// Find the average of an ARRAY
-
-function findAverage(array) {
-    let num = 0;
-    
-    for (const element of array) {
-        num += element;
-    }
-    
-    if (num === 0) {
-        console.log(0);
-    } else {
-        console.log(num / array.length);
-    }
-}
-
-findAverage([1, 2, 3, 4]);
-
-*/
-/*
-// You receive an array with your peers' test scores. Now calculate the average and compare your score!
-// Return True if you're better, else False!
-
-function betterThanAverage(classPoints, yourPoints) {
-    let allclass = 0;
-    let mclass = 0;
-    
-    for (const element of classPoints) {
-        allclass += element;
-    }
-
-    if (classPoints.length !== 0) {
-        mclass = allclass / classPoints.length;
-    }
-
-    if (mclass < yourPoints) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
- 
-    console.log(mclass);
-}
-
-betterThanAverage([2, 3], 5)
-
-*/
-/*
-// Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
-
-function sum (numbers) {
-    let result = 0;
-
-    for (const element of numbers) {
-        result += element
-    }
-    
-    console.log(result);
-};
-
-sum([1, 5.2, 4, 0, -1])
-
-*/
-/*
 // Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 
 function invert(array) {
@@ -170,67 +82,6 @@ function invert(array) {
 invert([1,2,3,4,5])
 invert([])
 invert([-1, -72, 69, -32])
-
-*/
-/*
-// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
-// If the input is an empty array or is null, return an empty array.
-
-function countPositivesSumNegatives(input) {
-    if (input === null || input.length === 0) {
-      console.log([]);
-    }
-  
-    let pos = [];
-    let neg = 0;
-
-    for (const element of input) {
-      
-      if (element > 0) {
-        pos.push(element);
-      } else if (element < 0) {
-        neg += element;
-      }
-    }
-
-      console.log([pos.length, neg]);
-
-}
-
-countPositivesSumNegatives([])
-countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
-countPositivesSumNegatives([0, 0])
-
-*/
-/*
-// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
-// Array can contain numbers or strings. X can be either.
-// Return true if the array contains the value, false if not.
-
-function check(a, x) {
-    console.log(a.includes(x));
-}
-
-check([66, 101], 66)
-
-*/
-/*
-// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
-
-function fakeBin(x){
-    let result = [];
-    
-    for (const element of x) {
-        if (element < 5) {
-            result.push(0);
-        } else {
-            result.push(1);
-        }
-    }
-    console.log(result.join(""));
-}
-
-fakeBin('45385593107843568') // '01011110001100111'
 
 */
 /*
@@ -268,56 +119,6 @@ function grow(x){
 }
 
 grow([1, 2, 3])
-
-*/
-/*
-// Build a function that returns an array of integers from n to 1 where n>0.
-
-const reverseSeq = n => {
-    let ar = [];
-    
-    for (let i = n; i >= 1; i--) {
-        ar.push(i);
-    }
-    console.log(ar);
-}
-
-reverseSeq(5)
-
-*/
-/*
-// Create a function with two arguments that will return an array of the first n multiples of x.
-
-function countBy(x, n) {
-    let z = [];
-    let num = 0;
-    
-
-    for (let i = 0; i < n; i++) {
-        num += x;
-        z.push(num);
-    }
-
-  
-    console.log(z);
-}
-
-countBy(2,5)
-
-*/
-/*
-// Given a non-negative integer, 3 for example, return a string with a murmur.
-
-
-const countSheep = function (num){
-    let sheeps = [];
-    for (let i = 1; i <= num; i++) {
-      sheeps.push(`${i} sheep...`);
-    }
-    console.log(sheeps.join(""));
-}
-
-countSheep(3);
 
 */
 /*
@@ -419,53 +220,6 @@ function sumArray(array) {
 
 */
 /*
-// Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
-
-function getGrade (s1, s2, s3) {
-    let average = (s1 + s2 + s3) / 3;
-    
-    if (average < 60 || average === 0) {
-        console.log("F");
-        return "F";
-    } else if (average < 70 || average === 60) {
-        console.log("D");
-        return "D";
-    } else if (average < 80 || average === 70) {
-        console.log("C");
-        return "C";
-    } else if (average < 90 || average === 80) {
-        console.log("B");
-        return "B";
-    } else if (average <= 100 || average === 90) {
-        console.log("A");
-        return "A";
-    }
-    
-
-}
-
-getGrade(95,90,93) // A
-getGrade(100,85,96) // A
-getGrade(66,62,68) // D
-
-*/
-/*
-// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
-// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
-
-function monkeyCount(n) {
-    let ar = [];
-    
-    for (let i = 1; i <= n; i++) {
-      ar.push(i);
-    }
-    console.log(ar);
-}
-
-monkeyCount(5)
-
-*/
-/*
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
 
 function removeExclamationMarks(s) {
@@ -484,4 +238,32 @@ function removeExclamationMarks(s) {
 
 removeExclamationMarks("Hello World!")
 
+// Solution stylé
+// function removeExclamationMarks(s) {
+//    return s.replace(/!/gi, '');
+// }
+
 */
+/*
+// All of the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and end with the same letters as the animal's name. For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
+// Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
+
+function feast(beast, dish) {
+    const b = beast.split("");
+    const d = dish.split("");
+    
+    if (b[0] === d[0] && b[b.length -1] === d[d.length -1]) {
+        console.log(true);
+        return true;
+    } else {
+        console.log(false);
+        return false;
+    }
+
+}
+
+feast("great blue heron", "garlic naan")
+feast("brown bear", "bear claw")
+
+*/
+
