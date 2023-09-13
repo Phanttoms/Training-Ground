@@ -465,3 +465,23 @@ function monkeyCount(n) {
 monkeyCount(5)
 
 */
+/*
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+    const ar = s.split("");
+    let result = [];
+
+    for (let i = 0; i < ar.length; i++) {
+        if (s[i] !== "!") {
+            result.push(s[i]);
+        }
+    }
+   
+    console.log(result.join(""));
+    return result.join("");
+}
+
+removeExclamationMarks("Hello World!")
+
+*/
