@@ -266,4 +266,25 @@ feast("great blue heron", "garlic naan")
 feast("brown bear", "bear claw")
 
 */
+/*
+// Your task is to find the first element of an array that is not consecutive.
 
+function firstNonConsecutive (arr) {
+    let result = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== arr[0] + i) {
+            result.push(arr[i]);
+        } else if (arr[0] + i === arr[arr.length -1]){
+            console.log(null);
+            return null;
+        }
+    } 
+
+    console.log(result[0]);
+    return result[0];
+}
+
+firstNonConsecutive([2,3,4,5,7,8])
+
+*/
