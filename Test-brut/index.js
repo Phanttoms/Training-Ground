@@ -220,53 +220,6 @@ function sumArray(array) {
 
 */
 /*
-// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
-
-function removeExclamationMarks(s) {
-    const ar = s.split("");
-    let result = [];
-
-    for (let i = 0; i < ar.length; i++) {
-        if (s[i] !== "!") {
-            result.push(s[i]);
-        }
-    }
-   
-    console.log(result.join(""));
-    return result.join("");
-}
-
-removeExclamationMarks("Hello World!")
-
-// Solution stylé
-// function removeExclamationMarks(s) {
-//    return s.replace(/!/gi, '');
-// }
-
-*/
-/*
-// All of the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and end with the same letters as the animal's name. For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
-// Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
-
-function feast(beast, dish) {
-    const b = beast.split("");
-    const d = dish.split("");
-    
-    if (b[0] === d[0] && b[b.length -1] === d[d.length -1]) {
-        console.log(true);
-        return true;
-    } else {
-        console.log(false);
-        return false;
-    }
-
-}
-
-feast("great blue heron", "garlic naan")
-feast("brown bear", "bear claw")
-
-*/
-/*
 // Your task is to find the first element of an array that is not consecutive.
 
 function firstNonConsecutive (arr) {
