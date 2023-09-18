@@ -225,20 +225,20 @@ function firstNonConsecutive (arr) {
 firstNonConsecutive([2,3,4,5,7,8])
 
 */
-
+/*
 // Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.
 
 function twiceAsOld(d, s) {
 
-  for (let i = 0; i < d; i++) {
-    if ((i + d) / 2 === s + i) {
-      console.log(i)
-    }
-  }
+  console.log(Math.abs(d - 2 * s))
+  return Math.abs(d - 2 * s);
+    
 }
 
-twiceAsOld(36, 7) // 22 good
+twiceAsOld(36, 7) // 22 
 twiceAsOld(55,30) // 5
-twiceAsOld(42,21) // 0 good
-twiceAsOld(22,1) // 20 good
+twiceAsOld(42,21) // 0 
+twiceAsOld(22,1) // 20 
 twiceAsOld(29,0) // 29
+
+*/
