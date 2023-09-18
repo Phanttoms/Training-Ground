@@ -276,3 +276,20 @@ correct("DUBL1N")
 correct("51NGAP0RE")
 
 */
+/*
+// Given a number n, return the number of positive odd numbers below n, EASY!
+
+function oddCount(n){
+  if (n % 2 === 0) {
+    console.log(n / 2);
+    return n / 2;
+  } else {
+    console.log((n - 1) / 2);
+    return (n - 1) / 2;
+  }
+  
+}
+
+oddCount(15) // 7
+
+*/
