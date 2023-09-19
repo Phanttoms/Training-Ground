@@ -293,3 +293,106 @@ function oddCount(n){
 oddCount(15) // 7
 
 */
+/*
+// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+String.prototype.toAlternatingCase = function () {
+  const ar = this.split("");
+  let result = [];
+
+  for (let i = 0; i < ar.length; i++) {
+    if (ar[i] === ar[i].toUpperCase()) {
+      result.push(ar[i].toLowerCase());
+    } else if (ar[i] === ar[i].toLowerCase()) {
+      result.push(ar[i].toUpperCase());
+    } else {
+      result.push(ar[i]);
+    }
+  }
+  console.log(result.join(""));
+  return result.join("");
+}
+
+"hello WORLD".toAlternatingCase()
+
+*/
+/*
+// Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+
+function powersOfTwo(n){
+  let result = [];
+
+  for (let i = 0; i <= n; i++) {
+    result.push(Math.pow(2, i));
+  }
+
+  console.log(result);
+  return result;
+}
+
+powersOfTwo(4) // [1, 2, 4, 8, 16]
+
+*/
+/*
+// Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
+// 100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.
+// 90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.
+// 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
+// 0, in other cases
+
+function finalGrade (exam, projects) {
+  if (exam > 90 || projects > 10) {
+    console.log(100);
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    console.log(90);
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    console.log(75);
+    return 75;
+  } else {
+    console.log(0);
+    return 0;
+  }
+}
+
+finalGrade(60, 5) // 100
+
+*/
+/*
+// Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+// "I love you"
+// "a little"
+// "a lot"
+// "passionately"
+// "madly"
+// "not at all"
+// If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+// When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+// Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+
+function howMuchILoveYou(nbPetals) { 
+  let ar = [];
+
+  for (let i = 0; i < nbPetals; i++) {
+    if (ar[ar.length -1] === "I love you") {
+      ar.push("a little");
+    } else if (ar[ar.length -1] === "a little") {
+      ar.push("a lot");
+    } else if (ar[ar.length -1] === "a lot") {
+      ar.push("passionately");
+    } else if (ar[ar.length -1] === "passionately") {
+      ar.push("madly");
+    } else if (ar[ar.length -1] === "madly") {
+      ar.push("not at all");
+    } else {
+      ar.push("I love you");
+    }
+  }
+  
+  console.log(ar[ar.length -1])
+}
+
+howMuchILoveYou(13)
+
+*/
