@@ -396,3 +396,13 @@ function howMuchILoveYou(nbPetals) {
 howMuchILoveYou(13)
 
 */
+/*
+// In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
+
+function findDifference(a, b) {
+  console.log(Math.abs((a.reduce((c, d) => c * d)) - (b.reduce((e, f) => e * f))));
+}
+
+findDifference([3, 2, 5], [1, 4, 4]) // 14
+
+*/
