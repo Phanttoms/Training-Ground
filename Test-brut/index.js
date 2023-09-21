@@ -1,20 +1,4 @@
 /*
-// Créez une fonction qui prend une chaîne et renvoie TRUE ou FALSE, selon que les caractères sont en ordre ou non.
-
-function checkOrder(str) {
-	const test = str.split("").sort().join("");
-    return test === str
-
-}
-
-// Afficher la sortie
-console.log(checkOrder("abc"));
-console.log(checkOrder("zyx"));
-console.log(checkOrder("123"));
-console.log(checkOrder("aabbcc"));
-
-*/
-/*
 // Make a simple function called greet that returns the most-famous "hello world!".
 // Style Points
 // Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
@@ -405,4 +389,11 @@ function findDifference(a, b) {
 
 findDifference([3, 2, 5], [1, 4, 4]) // 14
 
+*/
+/*
+function yolo(x) {
+  console.log([...x].sort((a, b) => a - b));
+}
+
+yolo([2, 1, 12, 4, 6, 3, 22, 18])
 */
