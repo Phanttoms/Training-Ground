@@ -420,3 +420,58 @@ mango(38, 32) // 832
 // mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 
 */
+/*
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let result = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+      result++;
+    }
+  }
+
+  console.log(result);
+  return result;
+}
+
+getCount("abracadabra") // 5
+
+*/
+/*
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+function disemvowel(str) {
+  const regex = /[aeiou]/ig;
+
+  console.log(str.replace(regex, ""))
+}
+
+disemvowel("This website is for losers LOL!")
+
+*/
+/*
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+// Additionally, if the number is negative, return 0.
+// Note: If the number is a multiple of both 3 and 5, only count it once.
+
+function solution(number){
+  let result = 0;
+
+  for (let i = 0; i < number; i++) {
+    if (i < number && i % 3 === 0 || i % 5 === 0) {
+      result += i;
+    }
+  }
+
+  console.log(result);
+  return result;
+}
+
+solution(10)
+
+*/
