@@ -47,28 +47,6 @@ function greet() {
 
 */
 /*
-// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
-
-function invert(array) {
-    let result = [];
-
-    for (const element of array) {
-        if (element > 0) {
-            result.push(-element)
-        } else {
-            result.push(Math.abs(element))
-        }
-        
-    } 
-    console.log(result);
-}
-
-invert([1,2,3,4,5])
-invert([])
-invert([-1, -72, 69, -32])
-
-*/
-/*
 // Write function bmi that calculates body mass index (bmi = weight / height2).
 // if bmi <= 18.5 return "Underweight"
 // if bmi <= 25.0 return "Normal"
