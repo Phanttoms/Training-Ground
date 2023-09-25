@@ -453,3 +453,38 @@ function solution(number){
 solution(10)
 
 */
+/*
+// Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+
+function between(a, b) {
+  const result = [];
+  
+  for (let i = a; i <= b; i++) {
+    if (i <= b) {
+      result.push(i);
+    };
+  }
+  console.log(result);
+  return result;
+}
+
+between(1, 4) // [1, 2, 3, 4]
+between(-2, 2) // [-2, -1, 0, 1, 2]
+
+*/
+/*
+// You will be given a list of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+// The returned value must be a string, and have "***" between each of its letters.
+// You should not remove or add elements from/to the array.
+
+function twoSort(s) {
+  const ar = [...s].sort()
+  const result = ar[0].split("").join("***")
+
+
+  console.log(result);
+}
+
+twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]) // 'b***i***t***c***o***i***n' 
+
+*/
