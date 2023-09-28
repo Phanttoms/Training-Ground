@@ -88,6 +88,39 @@ gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse"
 // ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
 
 */
+/*
+// Write a method, that will get an integer array as parameter and will process every number from this array.
+// Return a new array with processing every number of the input-array like this:
+// If the number has an integer square root, take this, otherwise square the number.
 
+function squareOrSquareRoot(array) {
+  let result = [];
+  for (const element of array) {
+    if (Math.sqrt(element) === Math.floor(Math.sqrt(element))) {
+      result.push(Math.sqrt(element));
+    } else {
+      result.push(element * element);
+    }
+  }
+  console.log(result)
+  return result;
+}
 
+squareOrSquareRoot([4, 3, 9, 7, 2, 1]) // [2, 9, 3, 49, 4, 1]
+squareOrSquareRoot([100, 101, 5, 5, 1, 1]) // [10, 10201, 25, 25, 1, 1]
 
+*/
+/*
+// In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times.
+// Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+
+function move (position, roll) {
+  console.log(position + (roll * 2));
+  return position + (roll * 2);
+}
+
+move(0, 4) // 8
+move(3, 6) // 15
+move(2, 5) // 12
+
+*/
