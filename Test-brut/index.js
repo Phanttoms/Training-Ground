@@ -1,65 +1,4 @@
 /*
-// Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accepts 1 parameter:n, n is the number of hotdogs a customer will buy, different numbers have different prices (refer to the following table), return how much money will the customer spend to buy that number of hotdogs.
-
-function saleHotdogs(n){
-  let result = 0;
-
-  if (n < 5) {
-    result = n * 100;
-  } else if (n >= 5 && n < 10) {
-    result = n * 95;
-  } else {
-    result = n * 90;
-  }
-
-  console.log(result);
-  return result;
-}
-
-saleHotdogs(  1) //  100
-saleHotdogs(  4) //  400
-saleHotdogs(  5) //  475
-saleHotdogs(  9) //  855
-saleHotdogs( 10) //  900
-
-*/
-/*
-// Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
-
-function expressionMatter(a, b, c) {
-  const op1 = a * (b + c);
-  const op2 = a * b * c;
-  const op3 = a + b * c;
-  const op4 = (a + b) * c;
-  const op5 = a + b + c;
-  let result = 0;
-
-  for (let i = 0; i < 5; i++) {
-    if (result < op1) {
-      result = op1;
-    } else if (result < op2) {
-      result = op2;
-    } else if (result < op3) {
-      result = op3;
-    } else if (result < op4) {
-      result = op4;
-    } else if (result < op5) {
-      result = op5;
-    }
-  }
-
-  
-  console.log(result);
-  return result;
-}
-
-expressionMatter(2, 1, 2) // 6
-expressionMatter(2, 1, 1) // 4
-expressionMatter(1, 1, 1) // 3
-expressionMatter(1, 2, 3) // 9
-
-*/
-/*
 // Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
 // return an array containing all of the strings in the input array except those that match strings in geese
 
@@ -122,5 +61,53 @@ function move (position, roll) {
 move(0, 4) // 8
 move(3, 6) // 15
 move(2, 5) // 12
+
+*/
+/*
+// write me a function stringy that takes a size and returns a string of alternating 1s and 0s.
+
+function stringy(size) {
+  let ar = [];
+  for (let i = 0; i < size; i++) {
+    if (ar[ar.length -1] === 1) {
+      ar.push(0);
+    } else {
+      ar.push(1);
+    }
+  }
+  console.log(ar.join(""));
+  // return ar.join("");
+}
+
+//stringy(3)
+//stringy(12)
+//stringy(5)
+stringy(49)
+
+*/
+
+/*
+String.prototype.isUpperCase = function() {
+  console.log(this.map((x) => x === x.toUpperCase()));
+}
+
+*/
+/*
+// Create a method to see whether the string is ALL CAPS
+
+function isUpperCase(x) {
+  if (x.toUpperCase() === x) {
+    console.log("upper");
+    return
+  } else {
+    console.log("lower");
+    return
+  }
+}
+
+isUpperCase('HELLO I AM DONALD')
+isUpperCase('c')
+isUpperCase('BOB WALKS HIS DOG EVERY DAY.')
+isUpperCase('HeLLO I AM DONaLD')
 
 */
