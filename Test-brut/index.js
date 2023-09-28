@@ -488,3 +488,28 @@ function twoSort(s) {
 twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]) // 'b***i***t***c***o***i***n' 
 
 */
+/*
+// Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accepts 1 parameter:n, n is the number of hotdogs a customer will buy, different numbers have different prices (refer to the following table), return how much money will the customer spend to buy that number of hotdogs.
+
+function saleHotdogs(n){
+  let result = 0;
+
+  if (n < 5) {
+    result = n * 100;
+  } else if (n >= 5 && n < 10) {
+    result = n * 95;
+  } else {
+    result = n * 90;
+  }
+
+  console.log(result);
+  return result;
+}
+
+saleHotdogs(  1) //  100
+saleHotdogs(  4) //  400
+saleHotdogs(  5) //  475
+saleHotdogs(  9) //  855
+saleHotdogs( 10) //  900
+
+*/
