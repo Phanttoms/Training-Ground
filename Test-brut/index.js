@@ -1,33 +1,4 @@
 /*
-// Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
-// return an array containing all of the strings in the input array except those that match strings in geese
-
-function gooseFilter (birds) {
-  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-  let result = [];
-  for (const element of birds) {
-    switch (element) {
-      case geese[0] :
-      case geese[1] :
-      case geese[2] :
-      case geese[3] :
-      case geese[4] :
-        console.log("yolo");
-        break;
-      default : 
-        result.push(element);
-        break;
-    }
-  }
-  console.log(result);
-  return result;
-}
-
-gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"])
-// ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
-
-*/
-/*
 // Write a method, that will get an integer array as parameter and will process every number from this array.
 // Return a new array with processing every number of the input-array like this:
 // If the number has an integer square root, take this, otherwise square the number.
