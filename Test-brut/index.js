@@ -82,3 +82,57 @@ isUpperCase('BOB WALKS HIS DOG EVERY DAY.')
 isUpperCase('HeLLO I AM DONaLD')
 
 */
+/*
+// In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
+
+function findMultiples(integer, limit) {
+  let result = [];
+  let num = 0;
+  for (let i = 0; i < limit; i++) {
+    num += integer;
+    if (num <= limit) { 
+      result.push(num);
+    }
+  }
+  console.log(result)
+  return result;
+}
+
+findMultiples(5, 25) // [5, 10, 15, 20, 25]
+findMultiples(4, 27) // [4, 8, 12, 16, 20, 24]
+
+*/
+/*
+// You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
+// Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+
+function fixTheMeerkat(arr) {
+  console.log(arr.reverse());
+  return arr.reverse();
+}
+
+fixTheMeerkat(["tail", "body", "head"])
+fixTheMeerkat(["tails", "body", "heads"])
+fixTheMeerkat(["lower legs", "torso", "upper legs"])
+
+*/
+/*
+// Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+function moveZeros(arr) {
+  let result = [];
+  let zero = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      result.push(arr[i]);
+    } else {
+      zero.push(arr[i]);
+    }
+  }
+  console.log(result.concat(zero));
+  return result.concat(zero);
+}
+
+moveZeros([1,2,0,1,0,1,0,3,0,1]) // [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]
+
+*/
