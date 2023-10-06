@@ -195,3 +195,46 @@ spinWords("This is a test") // "This is a test"
 spinWords("Just kidding there is still one more") // "Just gniddik ereht is llits one more"
 
 */
+/*
+// Given an array of integers, find the one that appears an odd number of times.
+// There will always be only one integer that appears an odd number of times.
+
+function findOdd(A) {
+  let count = 0;
+  let arr = A.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        count++;
+      }
+    }
+    if (count % 2 !== 0) {
+      console.log(arr[i]);
+      return arr[i];
+    }
+  }
+}
+
+findOdd([7]) // 7
+findOdd([0]) // 0
+findOdd([1,1,2]) // 2
+findOdd([0,1,0,1,0]) // 0
+findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]) // 4
+
+*/
+/*
+// Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+function digitalRoot(n){
+  let result = 0;  String(n).split('').map(num => {
+    result += Number(num);
+  });  
+  console.log(result > 9 ? digitalRoot(result) : result);
+  return result > 9 ? digitalRoot(result) : result;
+}
+
+digitalRoot(16) // 7
+digitalRoot(456) // 6
+digitalRoot(943498) // 1
+
+*/
