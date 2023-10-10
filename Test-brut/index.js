@@ -222,4 +222,22 @@ findOdd([0,1,0,1,0]) // 0
 findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]) // 4
 
 */
+/*
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
+function squareDigits(num) {
+	const str = String(num);
+	const arr = str
+		.split("")
+		.map((x) => x * x)
+		.join("");
+
+	console.log(arr);
+	return arr;
+}
+
+squareDigits(3212); // 9414
+squareDigits(2112); // 4114
+squareDigits(0); // 0
+
+*/
