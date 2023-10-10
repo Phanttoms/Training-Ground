@@ -241,3 +241,19 @@ squareDigits(2112); // 4114
 squareDigits(0); // 0
 
 */
+/*
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+function highAndLow(numbers) {
+	const num = numbers.split(" ").map((x) => Number(x));
+	let max = Math.max(...num);
+	let min = Math.min(...num);
+
+	console.log(`${max} ${min}`);
+	return `${max} ${min}`;
+}
+
+highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"); // "42 -9";
+highAndLow("1 2 3"); // "3 1";
+
+*/
