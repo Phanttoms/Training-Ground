@@ -1,18 +1,4 @@
 /*
-// In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times.
-// Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
-
-function move (position, roll) {
-  console.log(position + (roll * 2));
-  return position + (roll * 2);
-}
-
-move(0, 4) // 8
-move(3, 6) // 15
-move(2, 5) // 12
-
-*/
-/*
 // write me a function stringy that takes a size and returns a string of alternating 1s and 0s.
 
 function stringy(size) {
