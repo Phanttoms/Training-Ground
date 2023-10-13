@@ -280,3 +280,72 @@ likes(["Max", "John", "Mark"]); // "Max, John and Mark like this";
 likes(["Alex", "Jacob", "Mark", "Max"]); // "Alex, Jacob and 2 others like this";
 
 */
+/*
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+function descendingOrder(n) {
+	const arr = String(n).split("");
+	console.log(Number(arr.sort((a, b) => b - a).join("")));
+	return Number(arr.sort((a, b) => b - a).join(""));
+}
+
+descendingOrder(0); // 0
+descendingOrder(1); // 1
+descendingOrder(111); // 111
+descendingOrder(15); // 51
+descendingOrder(1021); // 2110
+
+*/
+/*
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+function getMiddle(s) {
+	const arr = s.split("");
+	let first = [];
+	let second = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		if (i < arr.length / 2) {
+			first.push(arr[i]);
+		} else {
+			second.push(arr[i]);
+		}
+	}
+	if (arr.length % 2 === 0) {
+		console.log(`${first[first.length - 1]}${second[0]}`);
+		return `${first[first.length - 1]}${second[0]}`;
+	} else {
+		console.log(first[first.length - 1]);
+		return first[first.length - 1];
+	}
+}
+
+getMiddle("test"); // "es"
+getMiddle("testing"); // "t"
+getMiddle("middle"); // "dd"
+getMiddle("A"); // "A"
+
+*/
+/*
+// This time no story, no theory. The examples below show you how to write function accum:
+
+function accum(s) {
+	const result = [];
+	const lowerStr = s.toLowerCase();
+
+	for (let i = 0; i < lowerStr.length; i++) {
+		let str = lowerStr[i].toUpperCase();
+		for (let j = 0; j < i; j++) {
+			str += lowerStr[i];
+		}
+		result.push(str);
+	}
+	console.log(result.join("-"));
+	return result.join("-");
+}
+
+accum("AbCd"); // "A-Bb-Ccc-Dddd"
+accum("ZpglnRxqenU"); // "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
+accum("NyffsGeyylB"); // "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb"
+
+*/
