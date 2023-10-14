@@ -349,3 +349,27 @@ accum("ZpglnRxqenU"); // "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-
 accum("NyffsGeyylB"); // "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb"
 
 */
+/*
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+function arrayDiff(a, b) {
+	const result = [];
+
+	a.forEach(function included(el) {
+		if (!b.includes(el)) {
+			result.push(el);
+		}
+	});
+
+	console.log(result);
+	return result;
+}
+
+arrayDiff([1, 2], [1]); // [2]
+arrayDiff([1, 2, 2], [1]); // [2, 2];
+arrayDiff([1, 2, 3], [1, 2]); // [3];
+arrayDiff([], [1, 2]); // [];
+arrayDiff([1, 2, 2], []); // [1, 2, 2];
+arrayDiff([1, 2, 2], [2]); // [1];
+
+*/
