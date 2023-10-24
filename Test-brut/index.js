@@ -400,3 +400,28 @@ createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]); // "(111) 111-1111"
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]); // "(123) 456-7890"
 
 */
+/*
+// Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
+
+var countBits = function (n) {
+	let binair = n.toString(2);
+	let result = 0;
+
+	for (let i = 0; i < binair.length; i++) {
+		if (binair[i] === "1") {
+			result++;
+		}
+	}
+
+	console.log(result);
+	return result;
+};
+
+countBits(0); // 0
+countBits(4); // 1
+countBits(7); // 3
+countBits(9); // 2
+countBits(10); // 2
+countBits(1496656163); // 14
+
+*/
