@@ -451,7 +451,6 @@ filter_list([1, 2, "aasf", "1", "123", 123]); // [1, 2, 123];
 
 var isSquare = function (n) {
 	let result = Math.sqrt(n);
-
 	if (result === Math.floor(result)) {
 		console.log("gg");
     return true;
