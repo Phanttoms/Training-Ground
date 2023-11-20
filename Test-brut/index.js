@@ -436,7 +436,6 @@ function filter_list(l) {
 			result.push(l[i]);
 		}
 	}
-
 	console.log(result);
 	return result;
 }
