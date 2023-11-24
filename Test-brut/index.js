@@ -1,27 +1,4 @@
 /*
-// write me a function stringy that takes a size and returns a string of alternating 1s and 0s.
-
-function stringy(size) {
-  let ar = [];
-  for (let i = 0; i < size; i++) {
-    if (ar[ar.length -1] === 1) {
-      ar.push(0);
-    } else {
-      ar.push(1);
-    }
-  }
-  console.log(ar.join(""));
-  // return ar.join("");
-}
-
-//stringy(3)
-//stringy(12)
-//stringy(5)
-stringy(49)
-
-*/
-
-/*
 String.prototype.isUpperCase = function() {
   console.log(this.map((x) => x === x.toUpperCase()));
 }
