@@ -444,3 +444,16 @@ isSquare(25); // true;
 isSquare(26); // false;
 
 */
+/*
+
+let online = false;
+
+let message = "";
+
+if (online) {
+	console.log((message = "Utilisateur en ligne !"));
+} else {
+	console.log((message = "Utilisateur hors ligne !"));
+}
+
+*/
