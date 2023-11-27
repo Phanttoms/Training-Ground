@@ -1,29 +1,4 @@
 /*
-String.prototype.isUpperCase = function() {
-  console.log(this.map((x) => x === x.toUpperCase()));
-}
-
-*/
-/*
-// Create a method to see whether the string is ALL CAPS
-
-function isUpperCase(x) {
-  if (x.toUpperCase() === x) {
-    console.log("upper");
-    return
-  } else {
-    console.log("lower");
-    return
-  }
-}
-
-isUpperCase('HELLO I AM DONALD')
-isUpperCase('c')
-isUpperCase('BOB WALKS HIS DOG EVERY DAY.')
-isUpperCase('HeLLO I AM DONaLD')
-
-*/
-/*
 // In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
 
 function findMultiples(integer, limit) {
