@@ -1,24 +1,4 @@
 /*
-// In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
-
-function findMultiples(integer, limit) {
-  let result = [];
-  let num = 0;
-  for (let i = 0; i < limit; i++) {
-    num += integer;
-    if (num <= limit) { 
-      result.push(num);
-    }
-  }
-  console.log(result)
-  return result;
-}
-
-findMultiples(5, 25) // [5, 10, 15, 20, 25]
-findMultiples(4, 27) // [4, 8, 12, 16, 20, 24]
-
-*/
-/*
 // You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
 // Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
 
