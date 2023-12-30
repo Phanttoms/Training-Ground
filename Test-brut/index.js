@@ -1,41 +1,4 @@
 /*
-// Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
-
-function humanReadable (seconds) {
-  let heures = 0;
-  let minutes = 0;
-  let secondes = 0;
-  for (let i = 0; i < seconds; i++) {
-    secondes++;
-    if (secondes === 60) {
-      secondes -= 60;
-      minutes++;
-    } else if (minutes === 60) {
-      minutes -= 60;
-      heures++;
-    } 
-  }
-  if (heures < 10) {
-    heures = "0" + heures;
-  }
-  if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
-  if (secondes < 10) {
-    secondes = "0" + secondes;
-  }
-  console.log(`${heures}:${minutes}:${secondes}`);
-  return `${heures}:${minutes}:${secondes}`;
-}
-
-humanReadable(0) // '00:00:00'
-humanReadable(59) // '00:00:59'
-humanReadable(60) // '00:01:00'
-humanReadable(3599) // '00:59:59'
-humanReadable(86399) // '23:59:59'
-
-*/
-/*
 // Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
 
 function spinWords(string){
