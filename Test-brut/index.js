@@ -1,23 +1,4 @@
 /*
-// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
-
-function squareDigits(num) {
-	const str = String(num);
-	const arr = str
-		.split("")
-		.map((x) => x * x)
-		.join("");
-
-	console.log(arr);
-	return arr;
-}
-
-squareDigits(3212); // 9414
-squareDigits(2112); // 4114
-squareDigits(0); // 0
-
-*/
-/*
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
 function highAndLow(numbers) {
