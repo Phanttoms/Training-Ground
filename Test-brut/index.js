@@ -1,20 +1,4 @@
 /*
-// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
-
-function highAndLow(numbers) {
-	const num = numbers.split(" ").map((x) => Number(x));
-	let max = Math.max(...num);
-	let min = Math.min(...num);
-
-	console.log(`${max} ${min}`);
-	return `${max} ${min}`;
-}
-
-highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"); // "42 -9";
-highAndLow("1 2 3"); // "3 1";
-
-*/
-/*
 // You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 // Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
 // []                                -->  "no one likes this"
