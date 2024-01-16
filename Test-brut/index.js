@@ -1,20 +1,4 @@
 /*
-// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
-
-function descendingOrder(n) {
-	const arr = String(n).split("");
-	console.log(Number(arr.sort((a, b) => b - a).join("")));
-	return Number(arr.sort((a, b) => b - a).join(""));
-}
-
-descendingOrder(0); // 0
-descendingOrder(1); // 1
-descendingOrder(111); // 111
-descendingOrder(15); // 51
-descendingOrder(1021); // 2110
-
-*/
-/*
 // You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
 function getMiddle(s) {
