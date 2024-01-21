@@ -1,27 +1,4 @@
 /*
-// This time no story, no theory. The examples below show you how to write function accum:
-
-function accum(s) {
-	const result = [];
-	const lowerStr = s.toLowerCase();
-
-	for (let i = 0; i < lowerStr.length; i++) {
-		let str = lowerStr[i].toUpperCase();
-		for (let j = 0; j < i; j++) {
-			str += lowerStr[i];
-		}
-		result.push(str);
-	}
-	console.log(result.join("-"));
-	return result.join("-");
-}
-
-accum("AbCd"); // "A-Bb-Ccc-Dddd"
-accum("ZpglnRxqenU"); // "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
-accum("NyffsGeyylB"); // "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb"
-
-*/
-/*
 // Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 
 function arrayDiff(a, b) {
