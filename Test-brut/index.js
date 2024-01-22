@@ -1,28 +1,4 @@
 /*
-// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
-
-function arrayDiff(a, b) {
-	const result = [];
-
-	a.forEach(function included(el) {
-		if (!b.includes(el)) {
-			result.push(el);
-		}
-	});
-
-	console.log(result);
-	return result;
-}
-
-arrayDiff([1, 2], [1]); // [2]
-arrayDiff([1, 2, 2], [1]); // [2, 2];
-arrayDiff([1, 2, 3], [1, 2]); // [3];
-arrayDiff([], [1, 2]); // [];
-arrayDiff([1, 2, 2], []); // [1, 2, 2];
-arrayDiff([1, 2, 2], [2]); // [1];
-
-*/
-/*
 // Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
 function createPhoneNumber(numbers) {
