@@ -1,29 +1,4 @@
 /*
-// Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
-
-var countBits = function (n) {
-	let binair = n.toString(2);
-	let result = 0;
-
-	for (let i = 0; i < binair.length; i++) {
-		if (binair[i] === "1") {
-			result++;
-		}
-	}
-
-	console.log(result);
-	return result;
-};
-
-countBits(0); // 0
-countBits(4); // 1
-countBits(7); // 3
-countBits(9); // 2
-countBits(10); // 2
-countBits(1496656163); // 14
-
-*/
-/*
 // In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
 function filter_list(l) {
