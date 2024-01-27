@@ -1,26 +1,4 @@
 /*
-// Given an integral number, determine if it's a square number:
-
-var isSquare = function (n) {
-	let result = Math.sqrt(n);
-	if (result === Math.floor(result)) {
-		console.log("gg");
-    return true;
-	} else {
-		console.log("noob");
-    return false;
-	}
-};
-
-isSquare(-1); // false;
-isSquare(0); // true;
-isSquare(3); // false;
-isSquare(4); // true;
-isSquare(25); // true;
-isSquare(26); // false;
-
-*/
-/*
 
 let online = false;
 
