@@ -26,7 +26,7 @@ function XO(str) {
 XO("xo"); // true
 XO("xxOo"); // true
 XO("xxxm"); // false
-XO("Oo"); // false;
+XO("Oo"); // false
 XO("ooom"); // false;
 
 */
