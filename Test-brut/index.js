@@ -33,7 +33,7 @@ XO("ooom"); // false
 /*
 // In this kata you will create a function that takes in a list and returns a list with the reverse order.
 function reverseList(list) {
-	console.log(list.reverse());
+	console.log(list.reverse())
 	return list.reverse();
 }
 
