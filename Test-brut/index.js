@@ -1,14 +1,4 @@
 /*
-// In this kata you will create a function that takes in a list and returns a list with the reverse order.
-function reverseList(list) {
-	console.log(list.reverse())
-	return list.reverse()
-}
-
-reverseList([1, 2, 3, 4]); // [4, 3, 2, 1];
-reverseList([3, 1, 5, 4]); // [4, 5, 1, 3];
-*/
-/*
 // Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
 
 function duplicateCount(text) {
